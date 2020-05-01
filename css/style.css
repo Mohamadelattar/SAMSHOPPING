@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'FredokaOne-Regular';
+	src: url('../fonts/FredokaOne-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Quicksand-VariableFont_wght';
+	src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: 'Sniglet-ExtraBold';
+	src: url('../fonts/Sniglet-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: 'Sniglet-Regular';
+	src: url('../fonts/Sniglet-Regular.ttf');
+}
+
+h1
+{
+	font-family: FredokaOne-Regular,sans-serif;
+	font-size: 30px;
+}
+
