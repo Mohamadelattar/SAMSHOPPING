@@ -17,10 +17,110 @@
 	font-family: 'Sniglet-Regular';
 	src: url('../fonts/Sniglet-Regular.ttf');
 }
-
-h1
+header div
 {
-	font-family: FredokaOne-Regular,sans-serif;
-	font-size: 30px;
+	 padding-bottom: 5px;
+	 padding-right: 5px;
+	 padding-left: 5px;
 }
+ .title
+ {
+	 padding: 0!important;
+	 font-family: FredokaOne-Regular,sans-serif;
+	 margin-top: 15px;
+ }
 
+ .title h1
+ {
+	 font-size: 1.5rem!important;
+	 margin-bottom: 0;
+	 color: #816fca;
+	 margin-left: 15px;
+ }
+
+ .ligne
+ {
+	 border: 1px solid #aba9a8;
+ }
+ .list_header
+ {
+	 padding: 0!important;
+	 text-align: center;
+	  
+ }
+ .list_header nav  ul li 
+ {
+	display: inline;
+ }
+
+
+ .list_header nav ul 
+ {
+	margin-bottom: 0;
+	padding: 0;
+	height: 100%;
+ }
+
+ .button_header
+ {
+	 display: inline-block;
+	 height: 100%;
+	 
+ }
+
+ .button_header a
+ {
+	 color: black;
+	 font-size: 14px;
+	 font-family: Quicksand-VariableFont_wght , sans-serif;
+	 font-weight: bold;
+	 text-transform: uppercase;
+	 padding: 2em 1em;
+
+ }
+
+ .button_header a:hover
+ {
+	text-decoration: none;
+	background-color: #816fca;
+	color: #fff;
+ }
+
+ .nav_header  li
+ {
+	 display: inline;
+	 margin-right: 0.2em;
+	 margin-left: 0.2em;  
+	 font-size: 20px;
+ }
+ .nav_header
+ {
+	padding-right: 0!important;
+	margin-top: 15px;
+ }
+
+ .nav_header ul
+ {
+	 list-style: none;
+	  float: right;
+	 margin-bottom: 0;
+	 
+ }
+
+ @media (min-width: 876px)
+{
+    #button_nav
+    {
+		display: none;
+	
+	}
+	#CollapseNavbar
+	{
+		display: inline-block;
+	}
+
+	header div
+	{
+		max-height: 150px!important;
+	}
+}
