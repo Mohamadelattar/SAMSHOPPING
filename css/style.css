@@ -17,16 +17,19 @@
 	font-family: 'Sniglet-Regular';
 	src: url('../fonts/Sniglet-Regular.ttf');
 }
+
+/* Header Section */
+
 header div
 {
-	 padding-bottom: 5px;
 	 padding-right: 5px;
 	 padding-left: 5px;
+	 padding-bottom: 5px;
 }
  .title
  {
 	 padding: 0!important;
-	 font-family: FredokaOne-Regular,sans-serif;
+	 font-family: Sniglet-ExtraBold , sans-serif;
 	 margin-top: 15px;
  }
 
@@ -107,7 +110,7 @@ header div
 	 
  }
 
- @media (min-width: 876px)
+ @media (min-width: 990px)
 {
     #button_nav
     {
@@ -116,11 +119,102 @@ header div
 	}
 	#CollapseNavbar
 	{
-		display: inline-block;
+		display: inline;
 	}
 
-	header div
-	{
-		max-height: 150px!important;
-	}
+
+ .nav_header ul
+ {
+	  float: right;
+ }
+	 
+}
+
+/* End Header Section */
+
+/* Home Section */
+
+#home_center
+{
+	
+	
+	height: 400px;
+	padding-top: 5em;
+	text-align: center;
+	background: url("images/Online-shopping.jpg")  center no-repeat  ; 
+}
+
+#home_center h2
+{
+	color: #fff;
+	font-size: 4.5em;
+	font-family: Sniglet-ExtraBold , sans-serif;
+}
+
+#items
+{
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+#items h3
+{
+	font-size: 2em;
+	font-family: Quicksand-VariableFont_wght , sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+
+#popular_items, #new_items
+{
+	background: #262a32;
+	margin-bottom: 2em;
+	border-radius: 10px;
+}
+#button_items
+{
+ color: #fff;
+ font-family: Quicksand-VariableFont_wght , sans-serif;
+ padding: 1em 2em;
+ font-size: 1em;
+ background-color: #816fca;
+ border-radius: 3px;
+
+}
+
+/* Delevrey Section */
+#delivrey
+{
+	background: #000;
+	padding: 2em 1em;
+}
+
+#delivrey h4
+{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Quicksand-VariableFont_wght , sans-serif;
+}
+
+/* Footer Section */
+footer
+{
+	padding-top: 2em;
+}
+
+footer ul
+{
+	list-style: none;
+}
+
+footer ul a
+{
+	color: #000;
+}
+.social_media li
+{
+	display: inline;
+	margin-left: 3px;
 }

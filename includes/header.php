@@ -24,7 +24,7 @@
                     <h1>SAM Shopping</h1>
                 </div>
                 
-                <div class="col-xs-12 col-lg-4 col-sm-4 col-md-5 list_header" >
+                <div class="col-xs-12 col-lg-5 list_header" >
                 
                         <nav  class="navbar"   >
                         <button class="navbar-toggler collapsed"  id="button_nav" type="button" data-toggle="collapse" data-target="#CollapseNavbar " 
@@ -59,7 +59,7 @@
                         
                 </div>
                  
-                <div class="col-xs-12 col-lg-3 col-sm-4 col-md-3 nav_header">
+                <div class="col-xs-12 col-lg-3 col-sm-10 col-md-10 nav_header">
                         <nav>
                             <ul>
                                 <li><i class="fas fa-search"></i></li>
