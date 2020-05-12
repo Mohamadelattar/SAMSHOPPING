@@ -213,8 +213,67 @@ footer ul a
 {
 	color: #000;
 }
+
+footer ul li a:hover
+{
+	text-decoration: none;
+}
 .social_media li
 {
 	display: inline;
 	margin-left: 3px;
+}
+
+/* Catalog Section */
+
+
+#catalog
+{
+	background: #FD7C61;
+ text-align: center;
+ padding:2em 1em;
+}
+
+#catalog h2
+{
+	font-family: Quicksand-VariableFont_wght , sans-serif;
+	font-weight:bold;
+	color:#fff;
+	font-size:4em;
+	margin-bottom: 1em;
+}
+
+#catalog a , #catalog p
+{
+	color:#fff;
+}
+
+#catalog a:hover
+{
+	text-decoration: none;
+}
+
+.buttons
+{
+	background: #CA634E;
+	text-align: justify;
+	width: auto;
+	border-radius: 30px;
+	display: inline-block;
+	padding: 0.5em 0.7em;
+}
+
+
+.buttons button
+{
+	background: #FD7C61;
+	border-radius: 30px;
+	border: 0;
+	font-family: Quicksand-VariableFont_wght , sans-serif;
+
+}
+
+.buttons button:hover
+{
+	background: #CA634E;
 }
