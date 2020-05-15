@@ -277,3 +277,78 @@ footer ul li a:hover
 {
 	background: #CA634E;
 }
+
+/* End Section Catalog */
+
+/* Section Ajouter Produit */
+#ajouter
+{
+	background: #F1F1F1;
+	padding: 2em 1em;
+	text-align: center;
+}
+
+#ajouterProduit
+{
+	background: #fff;
+	padding: 2em 2em; 
+	text-align: left;
+	border-radius: 10px;
+	border: 1px solid #816FCA;
+
+}
+ 
+#ajouterProduit label
+{
+	font-family: FredokaOne-Regular , sans-serif;
+	font-weight:bold;
+	color:#816FCA;
+	font-size:1em;
+	display: inline-block;
+	margin-top: 2em;
+}
+#ajouterProduit input , #ajouterProduit select 
+{
+	float: right;
+	margin-top: 2em;
+	border-radius: 10px;
+}
+#ajouterProduit textarea
+{
+	display: block;
+	margin-top:1em;
+	margin-bottom: 3em;
+	margin-left: 2em;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+#ajouter h2
+{
+	font-family: Quicksand-VariableFont_wght , sans-serif;
+	font-weight:bold;
+	color:#000;
+	font-size:3em;
+	margin-bottom: 0.5em;
+}
+#ajouter a , #ajouter p
+{
+	color:#000;
+}
+
+#ajouter a:hover
+{
+	text-decoration: none;
+}
+.ajoutElement
+{
+	margin: 2em 1em;
+}
+ 
+input[type="file"] {
+ 
+	font-family: FredokaOne-Regular , sans-serif;
+	font-weight:bold;
+	color:rgb(219, 219, 219);
+	font-size:1em;
+}
