@@ -49,15 +49,15 @@ header div
  {
 	 padding: 0!important;
 	 text-align: center;
-	  
+
  }
- .list_header nav  ul li 
+ .list_header nav  ul li
  {
 	display: inline;
  }
 
 
- .list_header nav ul 
+ .list_header nav ul
  {
 	margin-bottom: 0;
 	padding: 0;
@@ -68,7 +68,7 @@ header div
  {
 	 display: inline-block;
 	 height: 100%;
-	 
+
  }
 
  .button_header a
@@ -93,7 +93,7 @@ header div
  {
 	 display: inline;
 	 margin-right: 0.2em;
-	 margin-left: 0.2em;  
+	 margin-left: 0.2em;
 	 font-size: 20px;
  }
  .nav_header
@@ -107,7 +107,7 @@ header div
 	 list-style: none;
 	  float: right;
 	 margin-bottom: 0;
-	 
+
  }
 
  @media (min-width: 990px)
@@ -115,7 +115,7 @@ header div
     #button_nav
     {
 		display: none;
-	
+
 	}
 	#CollapseNavbar
 	{
@@ -127,7 +127,7 @@ header div
  {
 	  float: right;
  }
-	 
+
 }
 
 /* End Header Section */
@@ -136,12 +136,12 @@ header div
 
 #home_center
 {
-	
-	
+
+
 	height: 400px;
 	padding-top: 5em;
 	text-align: center;
-	background: url("images/Online-shopping.jpg")  center no-repeat  ; 
+	background: url("images/Online-shopping.jpg")  center no-repeat  ;
 }
 
 #home_center h2
@@ -291,13 +291,13 @@ footer ul li a:hover
 #ajouterProduit
 {
 	background: #fff;
-	padding: 2em 2em; 
+	padding: 2em 2em;
 	text-align: left;
 	border-radius: 10px;
 	border: 1px solid #816FCA;
 
 }
- 
+
 #ajouterProduit label
 {
 	font-family: FredokaOne-Regular , sans-serif;
@@ -307,7 +307,7 @@ footer ul li a:hover
 	display: inline-block;
 	margin-top: 2em;
 }
-#ajouterProduit input , #ajouterProduit select 
+#ajouterProduit input , #ajouterProduit select
 {
 	float: right;
 	margin-top: 2em;
@@ -344,9 +344,9 @@ footer ul li a:hover
 {
 	margin: 2em 1em;
 }
- 
+
 input[type="file"] {
- 
+
 	font-family: FredokaOne-Regular , sans-serif;
 	font-weight:bold;
 	color:rgb(219, 219, 219);

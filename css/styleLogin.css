@@ -1,0 +1,73 @@
+@font-face {
+	font-family: 'FredokaOne-Regular';
+	src: url('../fonts/FredokaOne-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Quicksand-VariableFont_wght';
+	src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: 'Sniglet-ExtraBold';
+	src: url('../fonts/Sniglet-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: 'Sniglet-Regular';
+	src: url('../fonts/Sniglet-Regular.ttf');
+}
+/* h1 section */
+.title {
+  font-family: Sniglet-ExtraBold,sans-serif;
+  color: #723DBE;
+}
+.login-container{
+  font-family: Quicksand-VariableFont_wght , sans-serif;
+}
+.login-form{
+  margin: auto;
+  width: 370px;
+  padding: 15px;
+  max-width: 100%;
+}
+.login-form .form-control{
+  font-size: 15px;
+  min-height: 48px;
+  font-weight: 500;
+}
+.login-form a{
+  text-decoration: none;
+  color:#666;
+}
+.login-form a:hover{
+  color:#723dbe;
+}
+.forgot-link{
+  font-size: 13px;
+}
+/*text &  password fields*/
+.form-control:focus{
+  border-color:#816FCA!important;
+  box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25)!important;
+}
+.btn-custom{
+  background: #816FCA!important;
+  border-color:#723dbe!important;
+  color:#816FCA;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 48px;
+  font-family: Sniglet-Regular;
+}
+.btn-custom:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:active:focus{
+  background: #54229d;
+  border-color: #54229d;
+  color:#fff;
+}
+.btn-custom:focus{
+  box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+}
