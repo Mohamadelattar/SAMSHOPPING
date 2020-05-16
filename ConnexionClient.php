@@ -17,15 +17,15 @@
       <h1 class="mb-5 font-weight-light text-uppercase title">Connexion</h1>
       <div class="form-group">
         <input type="text" class="form-control rounded-pill form-control-lg"placeholder="Votre Email " required>
-        <div class="invalid-tooltip">
-          Verifier votre Email et Ressayer.
-        </div>
+      </div>
+      <div class="invalid-feedback">
+        Verifier votre Email et Ressayer.
       </div>
       <div class="form-group">
         <input type="password" class="form-control rounded-pill form-control-lg"placeholder="Mot de passe " required>
-        <div class="invalid-tooltip">
-          Verifier votre Mot de passe et Ressayer.
-        </div>
+      </div>
+      <div class="invalid-feedback">
+        Verifier votre Mot de passe et Ressayer.
       </div>
       <div class="forgot-link ">
         <div class="form-check ">
