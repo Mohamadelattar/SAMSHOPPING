@@ -34,7 +34,7 @@
         </div>
        <a href="#">Mot de passe oublié?</a>
       </div>
-      <button type="submit" class="btn btn-custom btn-block text-uppercase rounded-pill btn-lg">Se connecter</button>
+      <button type="submit" class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg">Se connecter</button>
        <p class="mt-3 font-weight-normal">Nouveau chez Nous ? <a href="#"><strong>Créer un Compte</strong></a></p>
     </form>
 
