@@ -1,5 +1,7 @@
 <?php
 include("includes/header.php");
+require 'config/config.php';
+require 'includes/form/AjouterProduit.php';
 ?>
 <section class="container-fluid" id="ajouter">
 <p><a href="#">Home</a>/<a href="#">Contact</a></p>
@@ -7,7 +9,7 @@ include("includes/header.php");
         <h2>Ajouter un produit</h2>
 <div class="container" id="ajouterProduit" >
     <div class="row">
-    <form action="" method="POST" class="col-lg-12">
+    <form action="AjouterProduit.php" method="POST" class="col-lg-12" enctype="multipart/form-data">
         <div class="ajoutElement"  >
         <label for="title" class="col-lg-6 " >Titre : </label>
         <input type="text" name="title" placeholder="Titre de le produit" class="col-lg-6">
@@ -22,9 +24,8 @@ include("includes/header.php");
         </select>
         </div>
         <div class="ajoutElement">
-        <label for="title" class="col-lg-6">Prix : </label>
-        <span>(en DH)</span>
-        <input type="text" name="title" placeholder="Prix de le produit" class="col-lg-6">
+        <label for="prix" class="col-lg-6">Prix : </label>
+        <input type="text" name="prix" placeholder="Prix de le produit" class="col-lg-6">
         </div>
         <div class="ajoutElement">
         <label for="description" class="col-lg-6" >Description :</label><br>
@@ -34,10 +35,11 @@ include("includes/header.php");
         <label for="imageProduit" class="col-lg-6">Telecharger L'image du produit :</label>
         <input type="file"  name="imageProduit" class="col-lg-6 " id="buttUpload">
         </div> 
-        <input type="submit" value="Enregistrer">
+        <input type="submit" value="Enregistrer" name="enregistrer">
     </form>
 </div>
 </div>
+  
 </section>
 <?php 
     include("includes/footer.php");
