@@ -1,7 +1,8 @@
 <?php
-include("includes/header.php");
 require 'config/config.php';
 require 'includes/form/AjouterProduit.php';
+include("includes/header.php");
+
 ?>
 <section class="container-fluid" id="ajouter">
 <p><a href="#">Home</a>/<a href="#">Contact</a></p>
@@ -13,6 +14,13 @@ require 'includes/form/AjouterProduit.php';
         <div class="ajoutElement"  >
         <label for="title" class="col-lg-6 " >Titre : </label>
         <input type="text" name="title" placeholder="Titre de le produit" class="col-lg-6">
+        <br>
+        <?php
+                if(in_array("S'il vous plait Insert le titre <br>",$error_array))
+                {
+                    echo "S'il vous plait Insert le titre <br>";
+                }
+            ?>
         </div>
         <div class="ajoutElement">
         <label for="categorie"   class="col-lg-6">Categorie : </label>
@@ -22,25 +30,61 @@ require 'includes/form/AjouterProduit.php';
             <option value="tablette">Tablette</option>
             <option value="accessesoire">Accessesoire</option>
         </select>
+        <br>
+        <?php
+                if(in_array("S'il vous plait Insert la categorie <br>",$error_array))
+                {
+                    echo "S'il vous plait Insert la categorie <br>";
+                }
+            ?>
         </div>
         <div class="ajoutElement">
         <label for="prix" class="col-lg-6">Prix : </label>
         <input type="text" name="prix" placeholder="Prix de le produit" class="col-lg-6">
+        <br>
+        <?php
+                if(in_array("S'il vous plait Insert le prix <br>",$error_array))
+                {
+                    echo "S'il vous plait Insert le prix <br>";
+                
+                }
+                else if(in_array("S'il vous plait Insert une valeur numeric <br>",$error_array))
+                {
+                    echo "S'il vous plait Insert une valeur numeric <br>";
+                }
+            ?>
         </div>
         <div class="ajoutElement">
         <label for="description" class="col-lg-6" >Description :</label><br>
         <textarea name="description" id="" cols="" rows="10%" class="col-lg-12" ></textarea>
+        <br>
+        <?php
+                if(in_array("S'il vous plait Insert la description <br>",$error_array))
+                {
+                    echo "S'il vous plait Insert la description <br>";
+                }
+                
+            ?>
         </div> 
         <div class="ajoutElement">      
         <label for="imageProduit" class="col-lg-6">Telecharger L'image du produit :</label>
         <input type="file"  name="imageProduit" class="col-lg-6 " id="buttUpload">
+        <br>
+        <?php
+                if(in_array("S'il vous plait Insert l' image <br>",$error_array))
+                {
+                    echo "S'il vous plait Insert l' image <br>";
+                }
+            ?>
         </div> 
         <input type="submit" value="Enregistrer" name="enregistrer">
     </form>
 </div>
 </div>
-  
+   
 </section>
 <?php 
     include("includes/footer.php");
     ?>
+
+ 

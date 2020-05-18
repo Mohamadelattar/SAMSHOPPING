@@ -29,7 +29,35 @@
          $description             =  ucfirst(strtolower($description));         // Capitilaze the first letter
 
          // Description
-         $imageProduit              =  addslashes(file_get_contents($_FILES["imageProduit"]["tmp_name"]));                 
+         $imageProduit              =  addslashes(file_get_contents($_FILES["imageProduit"]["tmp_name"]));
+         
+         if($title=="")
+         {
+            array_push($error_array,"S'il vous plait Insert le titre <br>");
+         }
+         if($categorie=="")
+         {
+            array_push($error_array,"S'il vous plait Insert la categorie <br>");
+         }
+         if($prix =="")
+         {
+            array_push($error_array,"S'il vous plait Insert le prix <br>");
+         }
+         else if(!is_float($prix))
+         {
+             
+             
+                array_push($error_array,"S'il vous plait Insert une valeur numeric <br>");
+              
+         }
+         if($description=="")
+         {
+            array_push($error_array,"S'il vous plait Insert la description <br>");
+         }
+         if($imageProduit =="")
+         {
+            array_push($error_array,"S'il vous plait Insert l' image <br>");
+         }
          
          
         
