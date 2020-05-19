@@ -352,3 +352,30 @@ input[type="file"] {
 	color:rgb(219, 219, 219);
 	font-size:1em;
 }
+
+.leftBar {
+	background-color: #333333;
+	height: 100vh;
+}
+
+.underLine {
+	border-bottom: 1px groove #EEEEEE;
+}
+
+.leftBarItem, .courant {
+	transition: all 0.5s;
+}
+
+.leftBarItem:hover {
+	background-color: #AAAAAA;
+	border-radius: 4px;
+}
+
+.courant {
+	background-color: #816FCA;
+	border-radius: 4px;
+}
+
+.courant:hover {
+	background-color: #A38FEC;
+}
