@@ -177,18 +177,24 @@ header div
 {
 	margin-bottom: 1em; 
 }
+#new_items
+{
+	text-align: center;
+}
 #new_item
 {
 	background: #fff;
-	padding: 0;
-	margin: 1em 2em;
-	 
+	margin-right: 1em;
+	margin-bottom: 1em; 
 }
 
-#new_items img
+ 
+#new_item p
 {
- width: 100%;
-
+	font-family: Quicksand-VariableFont_wght , sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 0;
 }
 #button_items
 {
@@ -213,7 +219,7 @@ header div
 	color: #fff;
 	font-size: 20px;
 	font-weight: bold;
-	font-family: Quicksand-VariableFont_wght , sans-serif;
+font-family: Quicksand-VariableFont_wght , sans-serif;
 }
 
 /* Footer Section */

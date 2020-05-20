@@ -27,18 +27,17 @@ include("includes/header.php");
 
         <div class="container" id="new_items">
             <h3>New Items</h3>
-            <div class="row">
+            <div class="d-lg-inline-flex  align-content-end align-content-center flex-wrap">
             
                 <?php
         
-                  $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 3");
+                  $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 4");
                 
                 while( $row =  mysqli_fetch_array($result)) {  
-                 echo "<div class='col-lg-3 col-md-6 col-sm-6 col-xs-12' id='new_item'>";
-                 echo '<img  height="170px" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
+                 echo "<div class='border border-primary' id='new_item'>";
+                 echo '<img  height="170px"  src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
                  echo "<br>"; 
                  echo "<p>".$row[1]."</p>";
-                 echo "<br>"; 
                  echo "<p>".$row[3]."DH"."</p>";
                 echo "</div>";
                 }
