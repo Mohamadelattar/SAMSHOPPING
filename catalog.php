@@ -1,4 +1,5 @@
 <?php
+require 'config/config.php';
 include("includes/header.php");
 ?>
  
@@ -22,67 +23,20 @@ include("includes/header.php");
                 <p>Infos</p>
             </div>
         </div>
-        <div class="row" style="margin-top:2em;">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            1
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            2
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            3
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            4
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            5
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            6
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            7
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            8
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            9
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            10
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            11
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            12
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            13
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            14
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            15
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            16
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            17
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            18
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            19
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            20
-            </div>
+        <div class="d-lg-inline-flex d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap" style="margin-top:2em;">
+        <?php
+        
+        $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 20");
+      
+      while( $row =  mysqli_fetch_array($result)) {  
+       echo "<div class='border border-primary' id='new_item'>";
+       echo '<img  height="170px"  src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
+       echo "<br>"; 
+       echo "<p>".$row[1]."</p>";
+       echo "<p>".$row[3]."DH"."</p>";
+      echo "</div>";
+      }
+      ?>
         </div>
         <div> <a href="#" id="button_items">view more</a></div>
 </section>

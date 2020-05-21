@@ -27,11 +27,11 @@ include("includes/header.php");
 
         <div class="container" id="new_items">
             <h3>New Items</h3>
-            <div class="d-lg-inline-flex  align-content-end align-content-center flex-wrap">
+            <div class="d-lg-inline-flex d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap">
             
                 <?php
         
-                  $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 4");
+                  $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 3");
                 
                 while( $row =  mysqli_fetch_array($result)) {  
                  echo "<div class='border border-primary' id='new_item'>";
@@ -46,7 +46,7 @@ include("includes/header.php");
               
             </div>
         </div>
-        <div> <a href="#" id="button_items">view more</a></div>
+        <div> <a href="catalog.php" id="button_items">view more</a></div>
     </section>
     <!-- Delivrey Section -->
     <section class="container-fluid" id="delivrey">

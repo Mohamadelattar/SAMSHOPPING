@@ -185,16 +185,30 @@ header div
 {
 	background: #fff;
 	margin-right: 1em;
-	margin-bottom: 1em; 
+	margin-bottom: 1em;
+	min-width: 230px;
+	 
+
+}
+@media only screen and (min-width: 577px) {
+	#new_item
+	{
+		min-width: 160px;
+		width: 240px;
+	}
 }
 
- 
+ #new_item img
+ {
+	 max-width: 240px;
+ }
 #new_item p
 {
 	font-family: Quicksand-VariableFont_wght , sans-serif;
 	font-size: 1em;
 	font-weight: bold;
 	margin-bottom: 0;
+	color: #000!important;
 }
 #button_items
 {
