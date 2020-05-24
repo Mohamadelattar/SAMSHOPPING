@@ -13,7 +13,7 @@ include("includes/header.php");
     <form action="AjouterProduit.php" method="POST" class="col-lg-12" enctype="multipart/form-data">
         <div class="ajoutElement"  >
         <label for="title" class="col-lg-6 " >Titre : </label>
-        <input type="text" name="title" placeholder="Titre de le produit" class="col-lg-6">
+        <input type="text" name="title" placeholder="Titre de le produit" class="col-lg-6 form-control rounded-pill form-control-lg">
         <br>
         <?php
                 if(in_array("S'il vous plait Insert le titre <br>",$error_array))
@@ -24,7 +24,7 @@ include("includes/header.php");
         </div>
         <div class="ajoutElement">
         <label for="categorie"   class="col-lg-6">Categorie : </label>
-        <select  name="categorie" class="col-lg-6">
+        <select  name="categorie" class="col-lg-6 form-control rounded-pill form-control-lg">
             <option value="smartphone">Smartphone</option>
             <option value="pc">Pc Portable</option>
             <option value="tablette">Tablette</option>
@@ -40,7 +40,7 @@ include("includes/header.php");
         </div>
         <div class="ajoutElement">
         <label for="prix" class="col-lg-6">Prix : </label>
-        <input type="text" name="prix" placeholder="Prix de le produit" class="col-lg-6">
+        <input type="text" name="prix" placeholder="Prix de le produit" class="col-lg-6 form-control rounded-pill form-control-lg">
         <br>
         <?php
                 if(in_array("S'il vous plait Insert le prix <br>",$error_array))
@@ -56,7 +56,7 @@ include("includes/header.php");
         </div>
         <div class="ajoutElement">
         <label for="description" class="col-lg-6" >Description :</label><br>
-        <textarea name="description" id="" cols="" rows="10%" class="col-lg-12" ></textarea>
+        <textarea name="description" id="" cols="" rows="10%" class="col-lg-12 form-control   form-control-lg" ></textarea>
         <br>
         <?php
                 if(in_array("S'il vous plait Insert la description <br>",$error_array))
@@ -77,7 +77,7 @@ include("includes/header.php");
                 }
             ?>
         </div> 
-        <input type="submit" value="Enregistrer" name="enregistrer">
+        <input type="submit" value="Enregistrer" name="enregistrer" class="form-control rounded-pill form-control-lg col-lg-2">
     </form>
 </div>
 </div>

@@ -26,7 +26,7 @@ include("includes/header.php");
         <div class="d-lg-inline-flex d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap" id="catalog_items" style="margin-top:2em;">
         <?php
         
-        $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 3");
+        $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 20");
       
       while( $row =  mysqli_fetch_array($result)) {  
        echo "<div class='border border-primary' id='new_item'>";

@@ -1,28 +1,28 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Connexion</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="css/styleLogin.css">
-<link rel="JavaScript" href="/js/inputsvalidation.js">
-  </head>
-  <body>
+ 
     <?php
+    require 'config/config.php';
+    require 'includes/form/login_verification.php';
     include ("includes/header.php");
+    
+    
      ?>
   <div class="login-container d-flex align-items-center justify-content-center">
-    <form class="login-form mt-5 needs-validation text-center" novalidate >
+    <form class="login-form mt-5 needs-validation text-center" novalidate method="POST" action="ConnexionClient.php">
       <h1 class="mb-5 font-weight-light text-uppercase title">Connexion</h1>
       <div class="form-group">
-        <input type="text" class="form-control rounded-pill form-control-lg"placeholder="Votre Email " required>
+        <input type="text" class="form-control rounded-pill form-control-lg"placeholder="Votre Email " name="log_email" required>
       </div>
       <div class="invalid-feedback">
         Verifier votre Email et Ressayer.
       </div>
       <div class="form-group">
-        <input type="password" class="form-control rounded-pill form-control-lg"placeholder="Mot de passe " required>
+        <input type="password" class="form-control rounded-pill form-control-lg"placeholder="Mot de passe " name="log_password" required>
+        <?php
+                if(in_array("Email or password was incorrect<br>",$error_login ))
+                {
+                    echo "Email or password was incorrect<br>";
+                }
+            ?>
       </div>
       <div class="invalid-feedback">
         Verifier votre Mot de passe et Ressayer.
@@ -34,7 +34,7 @@
         </div>
        <a href="#">Mot de passe oublié?</a>
       </div>
-      <button type="submit" class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg">Se connecter</button>
+      <button type="submit" name="login" class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg">Se connecter</button>
        <p class="mt-3 font-weight-normal">Nouveau chez Nous ? <a href="#"><strong>Créer un Compte</strong></a></p>
     </form>
 
@@ -63,9 +63,4 @@ include("includes/footer.php");
      });
    }, false);
  })();
-</script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-</html>
+ 
