@@ -20,12 +20,12 @@
 
 /* Header Section */
 
-header div
-{
-	 padding-right: 5px;
-	 padding-left: 5px;
-	 padding-bottom: 5px;
-}
+ header
+ {
+	 position: fixed;
+	 background: #Fff;
+	 margin-bottom: 5em;
+ }
  .title
  {
 	 padding: 0!important;
@@ -40,7 +40,15 @@ header div
 	 color: #816fca;
 	 margin-left: 15px;
  }
-
+h1 a
+{
+	color: #816fca;
+}
+h1 a:hover
+{
+	text-decoration: none;
+	color: #816fca;
+}
  .ligne
  {
 	 border: 1px solid #aba9a8;
@@ -96,6 +104,16 @@ header div
 	 margin-left: 0.2em;
 	 font-size: 20px;
  }
+ .nav_header  li a
+ {
+	 color: #000;
+ }
+ 
+ .nav_header  li a:hover
+ {
+	 color: #816fca;
+ }
+
  .nav_header
  {
 	padding-right: 0!important;
@@ -139,7 +157,8 @@ header div
 
 
 	height: 400px;
-	padding-top: 5em;
+	margin-top: 6em;
+	padding-top: 3em;
 	text-align: center;
 	background: url("images/Online-shopping.jpg")  center no-repeat  ;
 }
@@ -156,6 +175,7 @@ header div
 	text-align: center;
 	margin-top: 3em;
 	margin-bottom: 3em;
+ 
 }
 
 #items h3
@@ -187,9 +207,25 @@ header div
 	margin-right: 1em;
 	margin-bottom: 1em;
 	min-width: 230px;
-	 
-
 }
+#new_item a:hover
+{
+	text-decoration: none;
+}
+
+.overlay {
+ 
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+ 
 @media only screen and (min-width: 577px) {
 	#new_item
 	{
@@ -198,17 +234,21 @@ header div
 	}
 }
 
- #new_item img
- {
-	 max-width: 240px;
- }
-#new_item p
+ 
+.titre_item p
 {
 	font-family: Quicksand-VariableFont_wght , sans-serif;
 	font-size: 1em;
 	font-weight: bold;
-	margin-bottom: 0;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
 	color: #000!important;
+}
+.titre_item span
+{
+	color: #AAAAAA;
+	font-family: Sniglet-ExtraBold , sans-serif;
+	font-size: 1em;
 }
 #button_items
 {

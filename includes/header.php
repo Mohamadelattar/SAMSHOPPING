@@ -18,10 +18,10 @@
         <script src="js/all.js"></script>
     </head>
     <body>
-        <header class="container-fluid">
+        <header class="container-fluid" > 
             <div class="row Panel">
                 <div class="col-xs-12 col-lg-3 col-sm-4 col-md-4 title"  >
-                    <h1>SAM Shopping</h1>
+                    <h1><a href="home.php">SAM Shopping</a></h1>
                 </div>
                 
                 <div class="col-xs-12 col-lg-5 list_header" >
@@ -34,9 +34,21 @@
                 <div class="collapse navbar-toggleable-xs  " id="CollapseNavbar">
                             <ul>
                                 <li>
-                                     <div class="button_header">
+                                     <div class="button_header dropdown show">
                                          
-                                        <a href="#">categories  </a>
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">categories  </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Smartphone</a>
+                                        <a class="dropdown-item" href="#">Pc Portable</a>
+                                        <a class="dropdown-item" href="#">Tablette</a>
+                                        <a class="dropdown-item" href="#">Accessesoire</a>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="button_header">
+                                         
+                                        <a href="catalog.php">catalog</a>
                                      </div>
                                 </li>
                                 
@@ -47,12 +59,7 @@
                                     </div>
                                 </li>
                                 
-                                <li>
-                                    <div class="button_header">
-                                         
-                                        <a href="#">contact</a>
-                                     </div>
-                                </li>
+                                 
                             </ul>
                             </div>
                         </nav>
@@ -63,7 +70,7 @@
                         <nav>
                             <ul>
                                 <li><i class="fas fa-search"></i></li>
-                                <li><i class="far fa-user"></i></li>
+                                <li><a href="ConnexionClient.php"><i class="far fa-user"></i></a></li>
                                 <li><i class="far fa-heart"></i></li>
                                 <li><i class="fas fa-shopping-bag"></i></li>
                             </ul>

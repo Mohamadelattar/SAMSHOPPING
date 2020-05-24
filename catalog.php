@@ -15,7 +15,7 @@ include("includes/header.php");
                 <div class="buttons">
                     <button class="btn btn-danger">New</button>
                     <button class="btn btn-danger">Popular</button>
-                    <button class="btn btn-danger">All</button>
+                    <button class="btn btn-danger" >All</button>
                     <button class="btn btn-danger">Sales</button>
                 </div>
             </div>
@@ -23,18 +23,19 @@ include("includes/header.php");
                 <p>Infos</p>
             </div>
         </div>
-        <div class="d-lg-inline-flex d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap" style="margin-top:2em;">
+        <div class="d-lg-inline-flex d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap" id="catalog_items" style="margin-top:2em;">
         <?php
         
-        $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 20");
+        $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 3");
       
       while( $row =  mysqli_fetch_array($result)) {  
        echo "<div class='border border-primary' id='new_item'>";
-       echo '<img  height="170px"  src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
+       echo "<a href='#'>";
+       echo ' <img  height="200px" width="100%" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
        echo "<br>"; 
-       echo "<p>".$row[1]."</p>";
-       echo "<p>".$row[3]."DH"."</p>";
-      echo "</div>";
+       echo "<div class='titre_item'><p> ".$row[1]."</p>";
+       echo "<span>".$row[3]."DH"."</span></div>";
+      echo "</a></div>";
       }
       ?>
         </div>
@@ -66,3 +67,4 @@ include("includes/header.php");
 <?php 
     include("includes/footer.php");
 ?>
+ 
