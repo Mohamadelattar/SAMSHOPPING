@@ -5,7 +5,7 @@ if(isset($_POST['login'])) {
 	$email = filter_var($_POST['log_email'], FILTER_SANITIZE_EMAIL); //sanitize email
 
 	$_SESSION['log_email'] = $email; //Store email into session variable 
-	$password = $_POST['log_password']; //Get password
+	$password = md5($_POST['log_password']); //Get password
 
 	$check_database_query = mysqli_query($con, "SELECT * FROM client WHERE mail='$email' AND mot_passe='$password'");
 	$check_login_query = mysqli_num_rows($check_database_query);
