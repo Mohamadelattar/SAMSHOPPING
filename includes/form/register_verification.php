@@ -20,17 +20,17 @@
          $firstname             =  strip_tags($_POST["firstname"]);                  // Remove tags
          $firstname             =  str_replace(' ','',$firstname);          // remove space
          $firstname             =  ucfirst(strtolower($firstname));         // Capitilaze the first letter
-        // $_SESSION["firstname"] =  $firstname;
+       
          // Last name
          $lastname              = strip_tags($_POST["lastname"]);                    // Remove tags
          $lastname              = str_replace(' ','',$lastname);            // remove space 
          $lastname              = ucwords(strtolower($lastname));           // capitilaze the first letter 
-         //$_SESSION["lastname"]  = $lastname;
+         
          // Email 
          $email                  = strip_tags($_POST["email"]);
          $email                  = str_replace(' ','',$email);
          $email                  = ucwords(strtolower($email));
-        // $_SESSION["email"]      = $email;
+       
          // Email  Confirmation 
          $confirmEmail             = strip_tags($_POST["confirmEmail"]);              // Remove tags
          $confirmEmail             = str_replace(' ','',$confirmEmail);      // remove space 
@@ -39,22 +39,21 @@
          // Password
          $password                    = strip_tags($_POST["password"]);               // Remove tags
          $confirmPassword             = strip_tags($_POST["confirmPassword"]);        // Remove tags
-        // $_SESSION["password"]        = $password;
-        // $_SESSION["confirmPassword"] = $confirmPassword;
+         
         //Age
          $age                   =  strip_tags($_POST["age"]);                  // Remove tags
-        // $_SESSION["age"]       =  $age;
+         
         // Adresse
          $adresse             =  strip_tags($_POST["adresse"]);                  // Remove tags
          $adresse             =  str_replace(' ','',$adresse);          // remove space
          $adresse             =  ucfirst(strtolower($adresse));         // Capitilaze the first letter
-       //  $_SESSION["adresse"] =  $adresse;
+        
         
          // Ville
          $ville             =  strip_tags($_POST["ville"]);                  // Remove tags
          $ville             =  str_replace(' ','',$ville);          // remove space
          $ville             =  ucfirst(strtolower($ville));         // Capitilaze the first letter
-        // $_SESSION["ville"] =  $ville;
+        
         
              // Email Verification 
  
