@@ -13,9 +13,9 @@ include("includes/header.php");
             </div>
             <div class="col-xs-12   col-md-6 col-sm-6" style="text-align:center;">
                 <div class="buttons">
-                    <button class="btn btn-danger">New</button>
+                    <button class="btn btn-danger" onclick="showNew();" data-toggle="collapse" data-target="#catalog_items">New</button>
                     <button class="btn btn-danger">Popular</button>
-                    <button class="btn btn-danger" >All</button>
+                    <button class="btn btn-danger" onclick="showAll();" data-toggle="collapse" data-target="#catalog_all_items">All</button>
                     <button class="btn btn-danger">Sales</button>
                 </div>
             </div>
@@ -23,7 +23,7 @@ include("includes/header.php");
                 <p>Infos</p>
             </div>
         </div>
-        <div class="d-lg-inline-flex d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap" id="catalog_items" style="margin-top:2em;">
+        <div  class="collapse  align-content-center flex-wrap" id="catalog_items" style="margin-top:2em;">
         <?php
         
         $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 20");
@@ -31,7 +31,23 @@ include("includes/header.php");
       while( $row =  mysqli_fetch_array($result)) {  
        echo "<div class='border border-primary' id='new_item'>";
        echo "<a href='#'>";
-       echo ' <img  height="200px" width="100%" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
+       echo ' <img  height="auto" width="100%" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
+       echo "<br>"; 
+       echo "<div class='titre_item'><p> ".$row[1]."</p>";
+       echo "<span>".$row[3]."DH"."</span></div>";
+      echo "</a></div>";
+      }
+      ?>
+        </div>
+        <div  style="" class="collapse  align-content-center flex-wrap" id="catalog_all_items" style="margin-top:3em;">
+        <?php
+        
+        $result = mysqli_query($con,"SELECT * FROM `article`");
+      
+      while( $row =  mysqli_fetch_array($result)) {  
+       echo "<div class='border border-primary' id='new_item'>";
+       echo "<a href='#'>";
+       echo ' <img  height="auto" width="100%" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
        echo "<br>"; 
        echo "<div class='titre_item'><p> ".$row[1]."</p>";
        echo "<span>".$row[3]."DH"."</span></div>";
@@ -67,4 +83,19 @@ include("includes/header.php");
 <?php 
     include("includes/footer.php");
 ?>
+<script type="text/javascript">
+function showAll() { 
+ //document.getElementById("id1").style.display="none";
+ //document.getElementById("id2").style.display="none";
+ document.getElementById("catalog_items").style.display="none";
+ document.getElementById("catalog_all_items").style.display="block";
+}
+function showNew() { 
+ //document.getElementById("id1").style.display="none";
+ //document.getElementById("id2").style.display="none";
+ document.getElementById("catalog_all_items").style.display="none";
+ document.getElementById("catalog_items").style.display="block";
+}
+</script>
+
  
