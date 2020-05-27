@@ -24,7 +24,8 @@
  {
 	 position: fixed;
 	 background: #Fff;
-	 margin-bottom: 5em;
+	
+
  }
  .title
  {
@@ -314,7 +315,11 @@ footer ul li a:hover
 {
 	background: #FD7C61;
  text-align: center;
- padding:2em 1em;
+ padding-bottom: 2em;
+ padding-right: 1em;
+ padding-left: 1em;
+ padding-top: 7em;
+  
 }
 
 #catalog h2
@@ -323,7 +328,7 @@ footer ul li a:hover
 	font-weight:bold;
 	color:#fff;
 	font-size:4em;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 
 #catalog a , #catalog p

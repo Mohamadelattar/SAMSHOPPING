@@ -4,7 +4,7 @@ include("includes/header.php");
 ?>
  
 <section class="container-fluid" id="catalog">
-       <p><a href="#">Home</a>/<a href="#">About</a></p>
+       <p><a href="home.php">Home</a>/<a href="#">About</a></p>
         <br>
         <h2>Sam Shopping</h2>
         <div class="row">

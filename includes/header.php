@@ -39,10 +39,10 @@
                                          
                                         <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">categories  </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Smartphone</a>
-                                        <a class="dropdown-item" href="#">Pc Portable</a>
-                                        <a class="dropdown-item" href="#">Tablette</a>
-                                        <a class="dropdown-item" href="#">Accessesoire</a>
+                                        <a class="dropdown-item" href="Smartphone.php">Smartphone</a>
+                                        <a class="dropdown-item" href="Pcportable.php">Pc Portable</a>
+                                        <a class="dropdown-item" href="Tablette.php">Tablette</a>
+                                        <a class="dropdown-item" href="Accessesoire.php">Accessesoire</a>
                                         </div> 
                                     </div>
                                 </li>
