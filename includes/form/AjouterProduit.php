@@ -12,7 +12,7 @@
           
          // Title
          $title             =  strip_tags($_POST["title"]);                  // Remove tags
-         $title             =  str_replace(' ','',$title);                   // remove space
+                            // remove space
          $title             =  ucfirst(strtolower($title));                  // Capitilaze the first letter
 
          // Categorie
@@ -43,7 +43,7 @@
          {
             array_push($error_array,"S'il vous plait Insert le prix <br>");
          }
-         else if(!is_float($prix))
+         else if(!is_numeric($prix))
          {
              
              
