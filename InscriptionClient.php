@@ -3,6 +3,7 @@
     require 'config/config.php';
     require 'includes/form/register_verification.php';
     include ("includes/header.php");
+    include ("includes/Cart.php");
     
     
      ?>

@@ -1,6 +1,7 @@
 <?php
 require 'config/config.php';
 include("includes/header.php");
+include("includes/Cart.php");
 ?>
  
 <section class="container-fluid" id="catalog">
