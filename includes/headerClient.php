@@ -1,7 +1,15 @@
 <?php
+if(!isset($_SESSION)) 
+{ 
+	session_start(); 
+}
+
+  
 
 
 ?>
+
+ 
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,9 +81,16 @@
                         <nav>
                             <ul>
                                 <li><i class="fas fa-search"></i></li>
-                                <li><a href="ConnexionClient.php"><i class="far fa-user"></i></a></li>
-                                <li><i class="far fa-heart"></i></li>
                                 <li ><i class="fas fa-shopping-bag"></i></li>
+                                <li>
+                                <div class="button_header dropdown show">
+                                 <a class="btn btn-info dropdown-toggle" role="button" id="dropdownClient" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><?php echo  $_SESSION['nom']."  ".$_SESSION['prenom'];?></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownClient">
+                                 <a class="dropdown-item" href="home.php">Se deconnecter</a>
+                                 <a class="dropdown-item" href="home.php">Se deconnecter</a>
+                                 </div> 
+                                 </div>
+                                 </li>
                             </ul>
                         </nav>
                 </div>
@@ -89,3 +104,10 @@
         <div class="ligne "></div>
 </body>
 </html>
+<?php 
+
+function removeClient() { 
+    session_destroy();
+ }
+
+?>

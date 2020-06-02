@@ -1,6 +1,15 @@
 <?php
+ 
 require 'config/config.php';
-include("includes/header.php");
+if(isset($_SESSION['nom']) )
+{
+    include("includes/headerClient.php");
+}
+else
+{
+    include("includes/header.php");
+}
+
 include("includes/Cart.php");
 ?>
  
