@@ -39,7 +39,7 @@ include("includes/Cart.php");
         $result = mysqli_query($con,"SELECT * FROM `article` ORDER BY id_article DESC LIMIT 20");
       
       while( $row =  mysqli_fetch_array($result)) {  
-       echo "<div class='border border-primary' id='new_item'>";
+       echo "<div class='border border-primary new_item' >";
        echo "<a href='#'>";
        echo ' <img  height="auto" width="100%" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
        echo "<br>"; 
@@ -55,7 +55,7 @@ include("includes/Cart.php");
         $result = mysqli_query($con,"SELECT * FROM `article`");
       
       while( $row =  mysqli_fetch_array($result)) {  
-       echo "<div class='border border-primary' id='new_item'>";
+       echo "<div class='border border-primary new_item' >";
        echo "<a href='#'>";
        echo ' <img  height="auto" width="100%" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
        echo "<br>"; 
