@@ -14,8 +14,11 @@
                     <div class="col-lg-3 col-xs-6 col-md-6">
                         <h6>Categories</h6>
                         <ul>
-                            <li><a href="#">Accessoires</a></li>
-                            <li><a href="#">Sport</a></li>
+                            <li><a href="Smartphone.php">Smartphone</a></li>
+                            <li><a href="Pcportable.php">Pc Portable</a></li>
+                            <li><a href="Tablette.php">Tablette</a></li>
+                            <li><a href="Accessesoire.php">Accessesoire</a></li>
+                            
                         </ul>
                     </div>
                     <div class="col-lg-2 col-xs-6 col-md-6">
