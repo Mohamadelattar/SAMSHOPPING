@@ -23,9 +23,10 @@
 
  header
  {
+	 height: 60px;
 	 position: fixed;
 	 background: #Fff;
-	
+
 
  }
  .title
@@ -110,7 +111,7 @@ h1 a:hover
  {
 	 color: #000;
  }
- 
+
  .nav_header
  {
 	padding-right: 0!important;
@@ -314,7 +315,7 @@ footer ul li a:hover
  padding-right: 1em;
  padding-left: 1em;
  padding-top: 7em;
-  
+
 }
 
 #catalog h2
@@ -336,7 +337,7 @@ footer ul li a:hover
 	text-decoration: none;
 }
 
- 
+
 
 .buttons
 {
