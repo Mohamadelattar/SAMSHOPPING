@@ -198,7 +198,7 @@ h1 a:hover
 {
 	text-align: center;
 }
-#new_item
+.new_item 
 {
 	background: #fff;
 	display: inline-flex;
@@ -206,11 +206,13 @@ h1 a:hover
 	margin-bottom: 1em;
 	min-width: 230px;
 }
-#new_item a:hover
+.new_item  :hover
 {
 	text-decoration: none;
 }
+ 
 
+ 
 .overlay {
 
   height: 100%;
@@ -225,12 +227,12 @@ h1 a:hover
 }
 
 @media only screen and (min-width: 577px) {
-	#new_item
+	.new_item
 	{
 		min-width: 160px;
 		width: 240px;
 	}
-	#new_item img
+	.new_item img
 	{
 		height: 200px;
 	}

@@ -1,6 +1,13 @@
 <?php
 require 'config/config.php';
-include("includes/header.php");
+if(isset($_SESSION['nom']) )
+{
+    include("includes/headerClient.php");
+}
+else
+{
+    include("includes/header.php");
+}
 ?>
  
 <section class="container-fluid" id="catalog">
@@ -19,14 +26,19 @@ include("includes/header.php");
         
         $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Pc';");
       
-      while( $row =  mysqli_fetch_array($result)) {  
-       echo "<div class='border border-primary' id='new_item'>";
-       echo "<a href='#'>";
-       echo ' <img  height="auto" width="100%" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
-       echo "<br>"; 
-       echo "<div class='titre_item'><p> ".$row[1]."</p>";
-       echo "<span>".$row[3]."DH"."</span></div>";
-      echo "</a></div>";
+        $item = "item_pc";
+        $increment = 1;
+      while( $row =  mysqli_fetch_array($result)) 
+      {
+        $id = $item.$increment;   
+        echo "<div class='border border-primary new_item' id='" .$id . "' >" ;
+        echo "<a href='#'>";
+        echo ' <img  height="auto" width="100%" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
+        echo "<br>"; 
+        echo "<div class='titre_item'><p> ".$row[1]."</p>";
+        echo "<span>".$row[3]."DH"."</span></div>";
+        echo "</a></div>";
+        $increment++;
       }
       ?>
         </div>

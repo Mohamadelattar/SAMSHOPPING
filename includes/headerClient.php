@@ -84,15 +84,12 @@ if(!isset($_SESSION))
                                 <li ><i class="fas fa-shopping-bag"></i></li>
                                 <li>
                                 <div class="button_header dropdown show">
-                                 <a class="btn btn-info dropdown-toggle" role="button" id="dropdownClient" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><?php echo  $_SESSION['nom']."  ".$_SESSION['prenom'];?></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownClient">
-                                 <a class="dropdown-item" href="home.php">Se deconnecter</a>
-                                 <a class="dropdown-item" href="home.php">Se deconnecter</a>
-                                 </div> 
-                                 </div>
+                                 <a href="#"><?php echo  $_SESSION['nom']."  ".$_SESSION['prenom'];?></a>
                                  </li>
-                            </ul>
-                        </nav>
+                                 <li> <a href="includes/accesses/logout.php">
+                                        <i class="fa fa-sign-out"> </i>
+                                      </a>
+                                 </li>
                 </div>
                 
             </div>
@@ -104,10 +101,4 @@ if(!isset($_SESSION))
         <div class="ligne "></div>
 </body>
 </html>
-<?php 
 
-function removeClient() { 
-    session_destroy();
- }
-
-?>
