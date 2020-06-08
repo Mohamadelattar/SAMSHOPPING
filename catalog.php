@@ -1,17 +1,9 @@
 <?php
- 
 require 'config/config.php';
-if(isset($_SESSION['nom']) )
-{
-    include("includes/headerClient.php");
-}
-else
-{
-    include("includes/header.php");
-}
-
+include("includes/header.php");
 include("includes/Cart.php");
 ?>
+ 
  
 <section class="container-fluid" id="catalog">
        <p><a href="home.php">Home</a>/<a href="#">About</a></p>

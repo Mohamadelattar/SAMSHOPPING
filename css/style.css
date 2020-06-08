@@ -309,7 +309,7 @@ footer ul li a:hover
 /* Catalog Section */
 
 
-#catalog
+#catalog 
 {
 	background: #FD7C61;
  text-align: center;
@@ -484,3 +484,5 @@ input[type="file"] {
     transform: translateX(101%);
     cursor: pointer;
 }
+
+/* Search section */

@@ -3,7 +3,7 @@
     require 'config/config.php';
     require 'includes/form/login_verification.php';
     include ("includes/header.php");
-    include ("includes/Cart.php");
+     
 
      ?>
   <div class="login-container d-flex align-items-center justify-content-center">

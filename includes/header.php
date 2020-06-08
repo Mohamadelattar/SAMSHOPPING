@@ -1,5 +1,8 @@
 <?php
-
+if(!isset($_SESSION)) 
+{ 
+	session_start(); 
+}
 
 ?>
 <html>
@@ -80,17 +83,72 @@
         </li>
 
             <li class="nav-item ">
-            <a class ="nav-link" href="#"><span class="mr-1"><i class="far fa-heart"></i></span>Offres</a>
+            <a class ="nav-link" href="catalog.php"><span class="mr-1"><i class="far fa-heart"></i></span>Offres</a>
             </li>
             </ul>
+            <form action="recherche.php" method="POST">
             <div class="search-box mr-2 ml-auto ">
-                <input class="search-txt" type="text" name="" value="" placeholder="Chercher sur SAM ...">
-                <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+                
+                
+            
+            <input class="search-txt" type="text" name="search" value="" placeholder="Chercher sur SAM ...">
+                <a class="search-btn" type="submit" ><i class="fas fa-search"></i></a>
           </div>
+</form>
     <div class="ml-auto d-flex justify-content-between align-items-center">
-       
-                <a  class="mr-2" href="ConnexionClient.php"><i class="far fa-user"></i></a>
-                <a id="cart-info" class="mr-2" style="cursor: pointer;"><i class="fas fa-shopping-bag"></i></a>
+       <?php
+        if(isset($_SESSION['nom']) )
+        {
+           echo " <div class='profile mr-3 d-flex align-items-center'>
+           <div class='icon_wrap'>
+               <a href='#'>".   $_SESSION['nom']."  ".$_SESSION['prenom']."</a>
+               <i class='fas fa-chevron-down'></i>
+           </div>
+           <div class='profile_dd'>
+               <ul class='profile_ul' style='list-style-type: none;'>
+                   <li class='profile_li'>
+                       <a href='#' class='profile'>
+                           <span class='picon'>
+                              <i class='fas fa-user' aria-hidden='true'></i>
+                           </span>
+                           profile
+                       </a>
+                   </li>
+                   <li >
+                       <a href='#' class='Adress'>
+                           <span class='picon'>
+                               <i class='fas fa-map-marker' aria-hidden='true'></i>
+                           </span>
+                           Adresse
+                       </a>
+                   </li>
+                   <li >
+                       <a href='#' class='setting'>
+                           <span class='picon'>
+                               <i class='fas fa-cog' aria-hidden='true'></i>
+                           </span>
+                           Paramétres
+                       </a>
+                   </li>
+                   <li >
+                       <a href='includes/accesses/logout.php' class='logout'>
+                           <span class='picon'>
+                               <i class='fas fa-sign-out-alt' aria-hidden='true'></i>
+                           </span>
+                           Log out
+                       </a>
+                   </li>
+               </ul>
+           </div>
+       </div>";
+        }
+        else
+        {
+            echo "<a  class='mr-2' href='ConnexionClient.php'><i class='far fa-user'></i></a>
+            <a id='cart-info' class='mr-2' style='cursor: pointer;'><i class='fas fa-shopping-bag'></i></a>";
+        }
+       ?>
+                
                 
     </div>
             </div>
