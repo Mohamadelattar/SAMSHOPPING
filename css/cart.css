@@ -35,7 +35,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    transition: var(--mainTransition);
+     transition: all 400ms linear;
     background: rgb(187, 156, 232, 0.5);
     z-index: 2;
     visibility: hidden;
@@ -50,12 +50,13 @@
     z-index: 3;
     background: #9E85D9;
     padding: 1.5rem;
-    transition: var(--mainTransition);
-    transform: translateX(100%);
+    transition: all 400ms linear;
+     transform: translateX(100%);
   }
-  
+
   .showCart {
     transform: translateX(0);
+   
   }
   .transparentBcg {
     visibility: visible;
@@ -66,7 +67,7 @@
       min-width: 450px;
     }
   }
-  
+
   .close-cart {
     font-size: 1.7rem;
     cursor: pointer;
@@ -127,7 +128,7 @@
       margin-top: auto;
   }
   /*---------- End of Cart Item -------------------- */
-  
+
   .cart-footer {
     margin-top: 2rem;
     letter-spacing: var(--mainSpacing);
@@ -138,5 +139,5 @@
     text-transform: capitalize;
     margin-bottom: 1rem;
   }
-  
+
   /* --------------- End of Cart ---------------- */

@@ -129,6 +129,50 @@ html,body{
 			 border-bottom-color: #FF5500;
 			 transition: all 650ms ;
 		 }
+/*this is the added CSS for the user's dropdown*/
+		 .profile_dd{
+			position: absolute;
+			top: 77px;
+			right: 30px;
+			background: #0A2A59;
+			width: 250px;
+			height: auto;
+			border: 1px solid #FF5500;
+			border-radius: 3px;
+			box-shadow: 10px 10px 30px rgba(0,0,0,0.125);
+		 }
+		 .profile_dd ::before{
+			 content :"";
+			 position: absolute;
+			 top : -20px;
+			 right: 38px;
+			 border: 10px solid;
+			 border-color : transparent transparent #FF5500 transparent;
+		 }
+		 .profile .icon_wrap{
+			 display: flex;
+			 align-items: center;
+
+		 }
+		 svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
+			 color : #fff;
+			 display: inline-block;
+			 margin-left: 5px;
+		 }
+		 .profile .profile_dd ul li a {
+			 display :block;
+			 padding : 10px 30px;
+			 width:100%;
+			 
+		 }
+		 .profile .profile_dd ul li a:hover {
+			 background-color: #fff;
+			 text-decoration : none;
+			 border-bottom-color:#FF5500;
+			 border-bottom-width: 2px;
+			 border-bottom-style :solid;
+		 }
+/* end of the added style*/
  }
   @media (max-width: 991px) {
     .navbar-brand {

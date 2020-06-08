@@ -20,6 +20,42 @@
         <script src="js/fontawesome.js"></script>
         <script src="js/all.js"></script>
         <script src="js/script.js"></script>
+       
+        <style media="screen">
+        #catalog #catalog_items .img-container {
+          position: relative;
+          overflow: hidden;
+        }
+        #catalog #catalog_items .img-container .bag-btn {
+            position: absolute;
+            right: 0;
+           top: 80%;
+            font-family: Quicksand-VariableFont_wght,sans-serif;
+            text-transform: initial;
+            padding: 1px 12px;
+            letter-spacing: .7px;
+            transition: all 400ms linear;
+            transform: translateX(101%);
+            cursor: pointer;
+            border: 0;
+            outline: none;
+        }
+        #catalog_items .img-container .bag-btn:hover{
+          color : FF5500;
+        }
+          #catalog #catalog_items .img-container:hover .bag-btn{
+            transform: translateX(0);
+          }
+          #catalog #catalog_items .img-container img{
+    display: block;
+    width: 100%;
+    min-height: 12rem;
+    transition: all 300ms linear;
+}
+#catalog #catalog_items .img-container:hover img {
+  opacity: 0.5;
+}
+        </style>
     </head>
    <body>
     <nav class=" navbar navbar-expand-lg sticky-top" >
@@ -51,13 +87,16 @@
                 <input class="search-txt" type="text" name="" value="" placeholder="Chercher sur SAM ...">
                 <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
           </div>
-    <div class="ml-auto">
-                <a  class="mr-2"href="ConnexionClient.php"><i class="far fa-user"></i></a>
-               <a class="mr-2" href="#"><i class="fas fa-shopping-bag"></i></a>
+    <div class="ml-auto d-flex justify-content-between align-items-center">
+       
+                <a  class="mr-2" href="ConnexionClient.php"><i class="far fa-user"></i></a>
+                <a id="cart-info" class="mr-2" style="cursor: pointer;"><i class="fas fa-shopping-bag"></i></a>
+                
     </div>
             </div>
         </div>
     </nav>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>

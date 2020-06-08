@@ -1,6 +1,7 @@
-<?php ?>
-<div class="cart-overlay"> 
-<div class="cart">
+<?php
+ ?>
+<div class="cart-overlay">
+<div id="cart" class="cart">
   <span class="close-cart">
     <i class="fas fa-window-close"></i>
   </span>
@@ -53,7 +54,7 @@
   </div>
   <div class="cart-footer">
     <h3>Le Montant Total : $ <span class="cart-total">0</span></h3>
-  <button class="clear-cart banner-btn btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg">clear cart</button> 
+  <button class="clear-cart banner-btn btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg">clear cart</button>
   </div>
-</div> 
+</div>
 </div>

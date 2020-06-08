@@ -38,5 +38,5 @@
             </div>
 
         </footer>
-    
+    <script src="js/cart.js"></script>
 </html>

@@ -198,7 +198,7 @@ h1 a:hover
 {
 	text-align: center;
 }
-.new_item 
+.new_item
 {
 	background: #fff;
 	display: inline-flex;
@@ -210,9 +210,9 @@ h1 a:hover
 {
 	text-decoration: none;
 }
- 
 
- 
+
+
 .overlay {
 
   height: 100%;
@@ -466,4 +466,21 @@ input[type="file"] {
 
 .courant:hover {
 	background-color: #A38FEC;
+}
+/* Samrtphone section */
+#catalog #catalog_items .img-container{
+	position: relative;
+	overflow: hidden;
+}
+#catalog #catalog_items .img-container .bag-btn {
+    position: absolute;
+    right: 0;
+   top: 80%;
+    font-family: Quicksand-VariableFont_wght,sans-serif;
+    text-transform: initial;
+    padding: 1px 12px;
+    letter-spacing: .7px;
+    transition: all 650ms linear;
+    transform: translateX(101%);
+    cursor: pointer;
 }
