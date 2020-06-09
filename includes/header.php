@@ -1,7 +1,7 @@
 <?php
-if(!isset($_SESSION)) 
-{ 
-	session_start(); 
+if(!isset($_SESSION))
+{
+	session_start();
 }
 
 ?>
@@ -23,7 +23,7 @@ if(!isset($_SESSION))
         <script src="js/fontawesome.js"></script>
         <script src="js/all.js"></script>
         <script src="js/script.js"></script>
-       
+
         <style media="screen">
         #catalog #catalog_items .img-container {
           position: relative;
@@ -88,9 +88,9 @@ if(!isset($_SESSION))
             </ul>
             <form action="recherche.php" method="POST">
             <div class="search-box mr-2 ml-auto ">
-                
-                
-            
+
+
+
             <input class="search-txt" type="text" name="search" value="" placeholder="Chercher sur SAM ...">
                 <a class="search-btn" type="submit" ><i class="fas fa-search"></i></a>
           </div>
@@ -99,57 +99,64 @@ if(!isset($_SESSION))
        <?php
         if(isset($_SESSION['nom']) )
         {
-           echo " <div class='profile mr-3 d-flex align-items-center'>
-           <div class='icon_wrap'>
-               <a href='#'>".   $_SESSION['nom']."  ".$_SESSION['prenom']."</a>
-               <i class='fas fa-chevron-down'></i>
-           </div>
-           <div class='profile_dd'>
-               <ul class='profile_ul' style='list-style-type: none;'>
-                   <li class='profile_li'>
-                       <a href='#' class='profile'>
-                           <span class='picon'>
-                              <i class='fas fa-user' aria-hidden='true'></i>
-                           </span>
-                           profile
-                       </a>
-                   </li>
-                   <li >
-                       <a href='#' class='Adress'>
-                           <span class='picon'>
-                               <i class='fas fa-map-marker' aria-hidden='true'></i>
-                           </span>
-                           Adresse
-                       </a>
-                   </li>
-                   <li >
-                       <a href='#' class='setting'>
-                           <span class='picon'>
-                               <i class='fas fa-cog' aria-hidden='true'></i>
-                           </span>
-                           Paramétres
-                       </a>
-                   </li>
-                   <li >
-                       <a href='includes/accesses/logout.php' class='logout'>
-                           <span class='picon'>
-                               <i class='fas fa-sign-out-alt' aria-hidden='true'></i>
-                           </span>
-                           Log out
-                       </a>
-                   </li>
-               </ul>
-           </div>
-       </div>";
+           echo "     <div class='profile mr-3 d-flex align-items-center'>
+									 <div id='profileIconWrap' class='icon_wrap'>
+											 <img  src='css/images/user.png' alt='photo de profile'>
+											 <i  class='fas fa-chevron-down'></i>
+									 </div>
+									 <div id='profileDd' class='profile_dd'>
+											 <ul class='profile_ul' style='list-style-type: none; padding-left : inherit;'>
+												 <li class='profile_li '>
+														 <a href='' class='image_name'>
+																 <span class='picon'>
+																		<img class='image-profile d-flex justify-content-center aign-items-center ml-auto mr-auto' src='user.png' alt='photo de profile'>
+																 </span>
+																 <h6 style='font-family:Quicksand-VariableFont_wght,sans-serif; font-size:20px'>".$_SESSION['nom']." ".$_SESSION['prenom']."</h6>
+														 </a>
+												 </li>
+													 <li class='profile_li'>
+															 <a href='' class='profile'>
+																	 <span class='picon'>
+																			<i class='fas fa-user' aria-hidden='true'></i>
+																	 </span>
+																	 profile
+															 </a>
+													 </li>
+													 <li >
+															 <a href='' class='Adress'>
+																	 <span class='picon'>
+																			 <i class='fas fa-map-marker' aria-hidden='true'></i>
+																	 </span>
+																	 Adresse
+															 </a>
+													 </li>
+													 <li >
+															 <a href='' class='setting'>
+																	 <span class='picon'>
+																			 <i class='fas fa-cog' aria-hidden='true'></i>
+																	 </span>
+																	 Paramétres
+															 </a>
+													 </li>
+													 <li >
+															 <a href='' class='logout'>
+																	 <span class='picon'>
+																			 <i class='fas fa-sign-out-alt' aria-hidden='true'></i>
+																	 </span>
+																	 Log out
+															 </a>
+													 </li>
+											 </ul>
+									 </div>
+							 </div>";
         }
         else
         {
-            echo "<a  class='mr-2' href='ConnexionClient.php'><i class='far fa-user'></i></a>
-            <a id='cart-info' class='mr-2' style='cursor: pointer;'><i class='fas fa-shopping-bag'></i></a>";
+            echo "<a  class='mr-2' href='ConnexionClient.php'><i class='far fa-user'></i></a>";
         }
        ?>
-                
-                
+      <a id='cart-info' class='mr-2' style='cursor: pointer;'><i class='fas fa-shopping-bag'></i></a>
+
     </div>
             </div>
         </div>

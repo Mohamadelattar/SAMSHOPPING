@@ -62,6 +62,8 @@ html,body{
   color: #ffffff;
   font-weight: 100;
   letter-spacing: .5px;
+	margin-left: 5px ;
+	margin-right: 5px ;
 }
 
 .navbar ul{
@@ -129,17 +131,18 @@ html,body{
 			 border-bottom-color: #FF5500;
 			 transition: all 650ms ;
 		 }
-/*this is the added CSS for the user's dropdown*/
+/* this is the added CSS for the user dropdown*/
 		 .profile_dd{
 			position: absolute;
 			top: 77px;
 			right: 30px;
 			background: #0A2A59;
-			width: 250px;
+			width:auto;
 			height: auto;
 			border: 1px solid #FF5500;
 			border-radius: 3px;
 			box-shadow: 10px 10px 30px rgba(0,0,0,0.125);
+			display: none;
 		 }
 		 .profile_dd ::before{
 			 content :"";
@@ -161,9 +164,13 @@ html,body{
 		 }
 		 .profile .profile_dd ul li a {
 			 display :block;
-			 padding : 10px 30px;
+			 padding : 8px 0px;
 			 width:100%;
-			 
+
+		 }
+		 .profile .profile_dd ul li a .picon{
+			 margin-right: 7%;
+      margin-left: 10%;
 		 }
 		 .profile .profile_dd ul li a:hover {
 			 background-color: #fff;
@@ -172,7 +179,10 @@ html,body{
 			 border-bottom-width: 2px;
 			 border-bottom-style :solid;
 		 }
-/* end of the added style*/
+		 .profile-active{
+			 display: block;
+		 }
+/* end of the added */
  }
   @media (max-width: 991px) {
     .navbar-brand {
