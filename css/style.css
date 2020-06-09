@@ -150,22 +150,12 @@ h1 a:hover
 
 /* Home Section */
 
-#home_center
-{
+ 
 
-	height: 400px;
-	margin-top: 6em;
-	padding-top: 3em;
-	text-align: center;
-	background: url("images/Online-shopping.jpg")  center no-repeat  ;
-}
-
-#home_center h2
-{
-	color: #fff;
-	font-size: 4.5em;
-	font-family: Sniglet-ExtraBold , sans-serif;
-}
+ #home_center
+ {
+	 margin-top: 1em;
+ }
 
 #items
 {
