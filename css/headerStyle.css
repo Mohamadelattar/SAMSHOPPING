@@ -179,8 +179,8 @@ html,body{
 			 border-bottom-width: 2px;
 			 border-bottom-style :solid;
 		 }
-		 .profile-active{
-			 display: block;
+		 .profileActive{
+			 display: block ;
 		 }
 /* end of the added */
  }

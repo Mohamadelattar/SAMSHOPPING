@@ -2,7 +2,7 @@
  ?>
 <div class="cart-overlay">
 <div id="cart" class="cart">
-  <span class="close-cart">
+  <span id="colseCart" class="close-cart">
     <i class="fas fa-window-close"></i>
   </span>
   <h2 > Votre Panier </h2>
@@ -52,7 +52,7 @@
     </div>
     <!-- end of cart-item -->
   </div>
-  <div class="cart-footer">
+  <div class=" cart-total cart-footer">
     <h3>Le Montant Total : $ <span class="cart-total">0</span></h3>
   <button class="clear-cart banner-btn btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg">clear cart</button>
   </div>
