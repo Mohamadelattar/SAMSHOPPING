@@ -9,20 +9,13 @@ include("includes/Cart.php");
        <p><a href="home.php">Home</a>/<a href="#">About</a></p>
         <br>
         <h2>Sam Shopping</h2>
-        <div class="row" style="margin-bottom:2em;">
-            <div class="col-xs-12 col-lg-3" style="text-align:left; font-family: Quicksand-VariableFont_wght , sans-serif;" >
-                <p>931,423 results in all product</p>
-            </div>
-            <div class="col-xs-12   col-md-6 col-sm-6" style="text-align:center;">
+        <div  style="margin-bottom:2em;">
+             
+            <div class="d-inline-flex" style="text-align:center;">
                 <div class="buttons">
                     <button class="btn btn-danger" onclick="showNew();"id="newButton" autofocus data-toggle="collapse" data-target="#catalog_items">New</button>
-                    <button class="btn btn-danger">Popular</button>
                     <button class="btn btn-danger" onclick="showAll();" data-toggle="collapse" data-target="#catalog_all_items">All</button>
-                    <button class="btn btn-danger">Sales</button>
                 </div>
-            </div>
-            <div class="col-xs-12 col-lg-3 col-md-6 col-sm-6" style="text-align:right;">
-                <p>Infos</p>
             </div>
         </div>
         <div  class="collapse  align-content-center flex-wrap" id="catalog_items" style="margin-top:2em;">
@@ -73,15 +66,18 @@ include("includes/Cart.php");
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <h4>Free Delivrey</h4>
+                    <p> </p>
                     
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <h4>Easy Return</h4>
+                <p> </p>
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <h4>Wide choice</h4>
+                <p> </p>
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -100,14 +96,10 @@ document.getElementById("newButton").click();
  });
 
 function showAll() { 
- //document.getElementById("id1").style.display="none";
- //document.getElementById("id2").style.display="none";
  document.getElementById("catalog_items").style.display="none";
  document.getElementById("catalog_all_items").style.display="block";
 }
 function showNew() { 
- //document.getElementById("id1").style.display="none";
- //document.getElementById("id2").style.display="none";
  document.getElementById("catalog_all_items").style.display="none";
  document.getElementById("catalog_items").style.display="block";
 }
