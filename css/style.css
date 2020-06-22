@@ -20,7 +20,7 @@
 }
 
 /* Header Section */
-
+ 
  header
  {
 	 height: 60px;
@@ -152,11 +152,13 @@ h1 a:hover
 
  
 
- #home_center
- {
-	 margin-top: 1em;
- }
 
+#home_background
+{
+	padding-top: 2em;
+
+	background: #8458B3;
+}
 #items
 {
 	text-align: center;
@@ -475,4 +477,6 @@ input[type="file"] {
     cursor: pointer;
 }
 
-/* Search section */
+/* Payement Section */
+
+ 

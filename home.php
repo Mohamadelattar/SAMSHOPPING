@@ -5,10 +5,39 @@ require 'config/config.php';
  
  include("includes/Cart.php");
 ?>
+<style>
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  max-height: 300px;
+ 
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F5FFFA;
+}
 
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: #000;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: Quicksand-VariableFont_wght , sans-serif;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
     <!-- Background Section -->
-    <section class="container-fluid" id="home_center" > 
-    <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+     
+    <div id="carouselExampleCaptions" class="carousel slide "  data-ride="carousel" >
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -46,22 +75,57 @@ require 'config/config.php';
     <span class="sr-only">Next</span>
   </a>
 </div>
-</section>
-    
+ 
+<section id="home_background">
     <!-- Items Section -->
     <section class="container-fluid" id="items">
-        <div class="container" id="popular_items">
-            <h3>Popular Items</h3>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">1</div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">2</div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">3</div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">4</div>
-
+         
+            <h3 class="mb-3">Collections</h3>
+            <div class="d-flex justify-content-center d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap">
+                <div class=" col-md-6 col-sm-6  ">
+                  <div class="container" >
+                    <a href="Smartphone.php" class="">
+                    <img src="css\images\smartphone.jpg" alt=""  height="auto" style="max-height:300px;" width="100%" class="img-fluid img-thumbnail mb-4 ">
+                    <div class="overlay">
+                       <div class="text">Smartphone</div>
+                      </div>
+                    </a>
+                 </div>
+                </div>
+                <div class=" col-md-6 col-sm-6">
+                  <div class="container" >
+                   <a href="Pcportable.php" class="">
+                   <img src="css\images\laptobs.jpg" alt="" height="auto" style="max-height:300px;" width="100%" class="img-thumbnail img-fluid  mb-4  ml-2"> 
+                   <div class="overlay">
+                       <div class="text">Pc Portable</div>
+                      </div> 
+                  </a>
+                  </div>
+                </div>
+                <div class="  col-md-6 col-sm-6 ">
+                  <div class="container" >
+                    <a href="Accessesoire.php" class="">
+                    <img src="css\images\accessoires.jpg" alt="" height="auto" style="max-height:300px;" width="100%" class="img-thumbnail img-fluid mb-4">
+                    <div class="overlay">
+                       <div class="text">Accessesoire</div>
+                      </div>  
+                  </a>
+                  </div>
+              </div>
+              <div class=" col-md-6 col-sm-6  ">
+                  <div class="container" >
+                    <a href="Tablette.php" class="">
+                    <img src="css\images\tablette.jpg" alt=""  height="auto" style="max-height:300px;" width="100%" class="img-thumbnail img-fluid mb-4  ">
+                    <div class="overlay">
+                       <div class="text">Tablette</div>
+                      </div>  
+                  </a>
+                  </div>
+              </div>
             </div>
-        </div>
+         
 
-        <div class="container" id="new_items">
+        <div class="container mt-5" id="new_items">
             <h3>New Items</h3>
             <div class="d-flex justify-content-center d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap">
 
@@ -115,6 +179,7 @@ require 'config/config.php';
             </div>
         </div>
     </section>
+      </section>
     <?php
     include("includes/footer.php");
     ?>
