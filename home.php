@@ -6,14 +6,18 @@ require 'config/config.php';
  include("includes/Cart.php");
 ?>
 <style>
+.container
+{
+  position: relative;
+}
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 10px;
+  left: 0;
   right: 0;
-  max-height: 300px;
- 
+  height: 100%;
+  max-width:100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #F5FFFA;
@@ -82,40 +86,40 @@ require 'config/config.php';
          
             <h3 class="mb-3">Collections</h3>
             <div class="d-flex justify-content-center d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap">
-                <div class=" col-md-6 col-sm-6  ">
+                <div class=" col-md-6    ">
                   <div class="container" >
                     <a href="Smartphone.php" class="">
-                    <img src="css\images\smartphone.jpg" alt=""  height="auto" style="max-height:300px;" width="100%" class="img-fluid img-thumbnail mb-4 ">
+                    <img src="css\images\smartphone.jpg" alt=""  height="auto"style="max-height:300px; max-width:500px" width="100%" class="img-thumbnail img-fluid mb-4">
                     <div class="overlay">
                        <div class="text">Smartphone</div>
                       </div>
                     </a>
                  </div>
                 </div>
-                <div class=" col-md-6 col-sm-6">
+                <div class=" col-md-6  ">
                   <div class="container" >
                    <a href="Pcportable.php" class="">
-                   <img src="css\images\laptobs.jpg" alt="" height="auto" style="max-height:300px;" width="100%" class="img-thumbnail img-fluid  mb-4  ml-2"> 
+                   <img src="css\images\laptobs.jpg" alt="" height="auto" style="max-height:300px; max-width:500px" width="100%" class="img-thumbnail img-fluid mb-4"> 
                    <div class="overlay">
                        <div class="text">Pc Portable</div>
                       </div> 
                   </a>
                   </div>
                 </div>
-                <div class="  col-md-6 col-sm-6 ">
+                <div class="  col-md-6   ">
                   <div class="container" >
                     <a href="Accessesoire.php" class="">
-                    <img src="css\images\accessoires.jpg" alt="" height="auto" style="max-height:300px;" width="100%" class="img-thumbnail img-fluid mb-4">
+                    <img src="css\images\accessoires.jpg" alt="" height="auto" style="max-height:300px; max-width:500px" width="100%" class="img-thumbnail img-fluid mb-4">
                     <div class="overlay">
                        <div class="text">Accessesoire</div>
                       </div>  
                   </a>
                   </div>
               </div>
-              <div class=" col-md-6 col-sm-6  ">
+              <div class=" col-md-6   ">
                   <div class="container" >
                     <a href="Tablette.php" class="">
-                    <img src="css\images\tablette.jpg" alt=""  height="auto" style="max-height:300px;" width="100%" class="img-thumbnail img-fluid mb-4  ">
+                    <img src="css\images\tablette.jpg" alt=""  height="auto" style="max-height:300px; max-width:500px" width="100%" class="img-thumbnail img-fluid mb-4  ">
                     <div class="overlay">
                        <div class="text">Tablette</div>
                       </div>  
