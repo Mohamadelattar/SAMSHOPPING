@@ -58,7 +58,6 @@
                alert ("item added"); 
                
                
-               
           
             }
          });
