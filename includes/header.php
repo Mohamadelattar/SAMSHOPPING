@@ -112,7 +112,7 @@ if(!isset($_SESSION))
 												 <li class='profile_li '>
 														 <a href='' class='image_name'>
 																 <span class='picon'>
-																		<img class='image-profile d-flex justify-content-center aign-items-center ml-auto mr-auto' src='user.png' alt='photo de profile'>
+																		
 																 </span>
 																 <h6 style='font-family:Quicksand-VariableFont_wght,sans-serif; font-size:20px'>".$_SESSION['nom']." ".$_SESSION['prenom']."</h6>
 														 </a>
@@ -142,7 +142,7 @@ if(!isset($_SESSION))
 															 </a>
 													 </li>
 													 <li >
-															 <a href='' class='logout'>
+															 <a href='includes/accesses/logout.php' class='logout'>
 																	 <span class='picon'>
 																			 <i class='fas fa-sign-out-alt' aria-hidden='true'></i>
 																	 </span>
