@@ -18,11 +18,14 @@ if(!isset($_SESSION))
         <link rel="stylesheet" href="css/cart.css">
         <link rel="stylesheet" href="css/headerStyle.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/Payement.js"></script>
         <script src="js/fontawesome.js"></script>
         <script src="js/all.js"></script>
         <script src="js/script.js"></script>
+
 
         <style media="screen">
         #catalog #catalog_items .img-container {
