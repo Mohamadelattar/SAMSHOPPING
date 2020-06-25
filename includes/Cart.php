@@ -2,9 +2,6 @@
  ?>
 <div class="cart-overlay">
 <div id="cart" class="cart">
-  <span id="colseCart" class="close-cart">
-    <i class="fas fa-window-close"></i>
-  </span>
   <h2 style="margin-top : 10px;"> Votre Panier </h2>
   <div class="cart-content">
     <!-- cart-item -->

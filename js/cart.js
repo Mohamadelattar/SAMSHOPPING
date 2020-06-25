@@ -2,7 +2,6 @@
 (function (){
    const cartInfo=document.querySelector("#cart-info");
    const cart=document.querySelector ("#cart");
-   const closeCart = document.querySelector('#closeCart')
    const cartOverlay= document.querySelector("div.cart-overlay");
    // console.log(cart);
    // console.log(cartInfo);
@@ -10,31 +9,26 @@
    cartInfo.addEventListener('click',function(){     
        cart.classList.toggle('showCart');
        cartOverlay.classList.toggle('transparentBcg');
-       closeCart.addEventListener('click',function(){
-         cart.classList.remove('showCart');
-         cartOverlay.classList.remove('transparentBcg');
-      });
    });
-   
     })();
 // show the dropdown of profile_dd bug here
 (function (){
    const profileBtn=document.querySelector("#profileIconWrap");
-   const profileDd=document.querySelector ("#profileDd");
-   // console.log(profileBtn);
-   // console.log(profileDd);
+   const profileDd=document.querySelector("#profileDd");
+   console.log(profileBtn);
+   console.log(profileDd);
        profileBtn.addEventListener('click',function(){
-         profileDd.classList.toggle('profileActive');
+         profileDd.classList.add('profileActive');
     });
     })();
     // adding items
     (function (){
        let somme = 0;
       addBtn = document.querySelectorAll(".bag-btn");
-      console.log(addBtn);
+      // console.log(addBtn);
       addBtn.forEach(function(btn) {
          btn.addEventListener("click",function(event){
-            console.log(event.target);
+            // console.log(event.target);
             if(event.target.classList.contains("bag-btn"))
             {
                let fullPath=event.target.previousElementSibling.src;
@@ -49,8 +43,8 @@
                somme +=parseInt(price_item);
                item.name =name ;
                item.price =price ;
-               console.log(item);
-               console.log(finalPrice);
+               // console.log(item);
+               // console.log(finalPrice);
                
                const cartItem =document.createElement('div');
                cartItem.classList.add('cart-item');
@@ -60,8 +54,7 @@
                const cartTotal = document.querySelector('.cart-total');
                cart.insertBefore(cartItem,total);
                cartTotal.innerHTML=somme;
-               alert ("item added"); 
-               
+               alert ("item added");              
                
           
             }

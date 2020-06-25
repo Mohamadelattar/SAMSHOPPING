@@ -84,7 +84,7 @@ require 'config/config.php';
     <!-- Items Section -->
     <section class="container-fluid" id="items">
          
-            <h3 class="mb-3">Collections</h3>
+            <h3 class="mb-3" style="color: #6622CC;">Collections</h3>
             <div class="d-flex justify-content-center d-md-inline-flex  d-sm-inline-flex align-content-end align-content-center flex-wrap">
                 <div class=" col-md-6    ">
                   <div class="container" >
