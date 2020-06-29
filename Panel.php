@@ -1,3 +1,6 @@
+<?php
+require 'config/config.php';
+?>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +15,42 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/fontawesome.js"></script>
         <script src="js/all.js"></script>
+        <style>
+.container
+{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  max-width:100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFDC00
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: #000;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: Quicksand-VariableFont_wght , sans-serif;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
     </head>
-    <body>
+    <body style="background:#816fca;">
         <!-- navbar -->
         <nav class="navbar navbar-expand-md navbar-light">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent">
@@ -39,13 +76,91 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-9 col-md-8 ml-auto">
-                            ss
+                        </nav>
+                        <div class="col-lg-9 col-md-8 ml-auto" >
+                             
+                        <div class="card-deck" style="margin: 1em 1em;">
+                        
+                            <div class="card container" style="padding:3em 3em; border: 2px solid #000;  ">
+                            <a href="AjouterProduit.php">
+                                <img src="css\images\add.png" class="card-img-top" alt="Ajouter Produit" >
+                                <div class="overlay">
+                                    <div class="text">Ajouter un produit</div>
+                                </div>
+                                </a>
+                            </div>
+                            
+                            <div class="card container" style="padding:3em 3em; border: 2px solid #000;">
+                            <a href="ModifierProduit"></a>
+                                <img src="css\images\edit.png" class="card-img-top" alt="Modifier Produit">
+                                <div class="overlay">
+                                    <div class="text">Modifier un produit</div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="card container" style="padding:3em 3em; border: 2px solid #000;">
+                                <img src="css\images\delete.png" class="card-img-top" alt="Supprimer Produit">
+                                <div class="overlay">
+                                    <div class="text">Supprimer un produit</div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- Statistique -->
+                        <div class="card-deck">
+                            <div class="card container" style="padding:1em 3em;   ">
+                                <h3 style="margin-bottom:2em"> Nombre de Produit :
+                                    <?php $result = mysqli_query($con,"SELECT * FROM `article`");
+                                    $increment = 0;
+                                    while( $row =  mysqli_fetch_array($result)) 
+                                            { $increment++; }
+                                             echo $increment;
+                                    ?>
+                                </h3>
+                                <h5> Smartphone :
+                                <?php $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Smartphone';");
+                                $increment = 0;
+                                while( $row =  mysqli_fetch_array($result)) 
+                                { $increment++; }
+                                echo $increment;
+                                ?>
+                                </h5>
+                                <h5> Pc Portable :
+                                <?php $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Pc';");
+                                $increment = 0;
+                                while( $row =  mysqli_fetch_array($result)) 
+                                { $increment++; }
+                                echo $increment;
+                                ?>
+                                </h5>
+                                <h5> Tablette :
+                                <?php $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Tablette';");
+                                $increment = 0;
+                                while( $row =  mysqli_fetch_array($result)) 
+                                { $increment++; }
+                                echo $increment;
+                                ?>
+                                </h5>
+                                <h5> Accessesoire :
+                                <?php $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Accessesoire';");
+                                $increment = 0;
+                                while( $row =  mysqli_fetch_array($result)) 
+                                { $increment++; }
+                                echo $increment;
+                                ?>
+                                </h5>
+                            </div>
+                            <div class="card container" style="padding:1em 3em;">
+                                <h3 style="margin-bottom:2em">Produit Vendus</h3>
+                            </div>
+                            
+                            </div>
+
+                         </div>
+                        
                     </div>
                 </div>
             </div>
-        </nav>
+        
         
 
 
