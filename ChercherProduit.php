@@ -44,7 +44,7 @@
 
         </div>
         <div class="col-md-6">
-        <form action="includes/form/ChercherProduit.php" method="POST">
+        <form action="ModifierProduit.php" method="POST">
           <input type="text" id="search_data" placeholder="Entrer nom du produit..." autocomplete="off" name="titre" class="form-control input-lg" />
           <br>
           <br>
