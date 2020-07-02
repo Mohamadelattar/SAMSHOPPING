@@ -6,7 +6,6 @@
   <div class="cart-content">
     <!-- cart-item -->
      
-   
     <!-- end of cart-item -->
   </div>
   <div class="   cart-footer">
