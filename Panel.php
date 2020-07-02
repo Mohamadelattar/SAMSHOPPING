@@ -99,10 +99,12 @@ require 'config/config.php';
                                 </a>
                             </div>
                             <div class="card container" style="padding:3em 3em; border: 2px solid #000;">
+                            <a href="RechercheProduit.php">
                                 <img src="css\images\delete.png" class="card-img-top" alt="Supprimer Produit">
                                 <div class="overlay">
                                     <div class="text">Supprimer un produit</div>
                                 </div>
+                            </a>
                             </div>
                         </div>
                         <!-- Statistique -->
