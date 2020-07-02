@@ -91,7 +91,7 @@ require 'config/config.php';
                             </div>
                             
                             <div class="card container" style="padding:3em 3em; border: 2px solid #000;">
-                            <a href="ModifierProduit"></a>
+                            <a href="ChercherProduit.php">
                                 <img src="css\images\edit.png" class="card-img-top" alt="Modifier Produit">
                                 <div class="overlay">
                                     <div class="text">Modifier un produit</div>
@@ -125,7 +125,7 @@ require 'config/config.php';
                                 ?>
                                 </h5>
                                 <h5> Pc Portable :
-                                <?php $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Pc';");
+                                <?php $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Pc portable';");
                                 $increment = 0;
                                 while( $row =  mysqli_fetch_array($result)) 
                                 { $increment++; }

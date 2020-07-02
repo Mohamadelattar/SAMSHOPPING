@@ -19,7 +19,7 @@ include("includes/Cart.php");
         <div  class="   align-content-center flex-wrap" id="catalog_items" style="margin-top:2em;">
         <?php
         
-        $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Pc';");
+        $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Pc portable';");
       
         $item = "item_pc";
         $increment = 1;
