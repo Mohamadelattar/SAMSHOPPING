@@ -29,16 +29,17 @@ require 'config/config.php';
   height: 100%;
   max-width:100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 1s ease;
   background-color: #FFDC00
 }
 
 .container:hover .overlay {
   opacity: 1;
+  transform: rotate(360deg);
 }
 .text {
   color: #000;
-  font-size: 30px;
+  font-size: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,7 +47,7 @@ require 'config/config.php';
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  
 }
 </style>
     </head>

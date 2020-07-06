@@ -25,6 +25,7 @@ require 'config/config.php';
 
 .container:hover .overlay {
   opacity: 1;
+  transform: rotate(360deg);
 }
 .text {
   color: #000;
