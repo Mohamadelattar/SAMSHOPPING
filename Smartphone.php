@@ -24,7 +24,7 @@ include("includes/Cart.php");
         while( $row =  mysqli_fetch_array($result))
       {
         $id = $item.$increment;
-        echo "<form method='post' action='addToCart.php'>";
+        echo "<form method='POST' action='addToCart.php'>";
         echo "<div class='border border-primary new_item' id='" .$id . "' >" ;
         echo "<a href='#'>";
         echo "<div class='img-container'>";

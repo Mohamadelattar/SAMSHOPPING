@@ -14,15 +14,27 @@ if(isset($_POST['titre']))
 	$design = $row['design'];
     $prix = $row['prix'];
     $categorie = $row['categorie'];
+    $imageProduit = $row['imageProduit'];
 }
 ?>
-<section class='container-fluid'>
-<h2>Supprimer Produit</h2>
-
+<style>
+    body{
+        background:#F53F85;
+    }
+</style>
+<section class='container'>
 
 <form action="SupprimerProduit.php" method="POST">
+<div class="card" style="width:30%; margin: 2em auto;" >
+  <img class="card-img-top"   alt="Card image cap" src="data:image/jpeg;base64,<?php echo base64_encode( $imageProduit ); ?>" />
+  <div class="card-body">
+    <h5 class="card-title"><?php echo $titre; ?></h5>
+    <p class="card-text"><?php echo $prix; ?></p>
+  </div>
+</div>
+<input type="submit" value="Supprimer" name="supprimer" class="form-control rounded-pill form-control-lg " style="width:30%; margin: 2em auto;" >
 <input type="text" name="id_article" class="col-lg-6 form-control rounded-pill form-control-lg" style="display:none;" value="<?php echo $id_article; ?>">
-<input type="submit" value="Supprimer" name="supprimer" class="form-control rounded-pill form-control-lg col-lg-2">
+
 </form>
 
 </section>
