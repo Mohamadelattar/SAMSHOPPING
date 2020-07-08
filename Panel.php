@@ -16,7 +16,7 @@ require 'config/config.php';
         <script src="js/fontawesome.js"></script>
         <script src="js/all.js"></script>
         <style>
-.container
+.option
 {
   position: relative;
 }
@@ -33,7 +33,7 @@ require 'config/config.php';
   background-color: #FFDC00
 }
 
-.container:hover .overlay {
+.option:hover .overlay {
   opacity: 1;
   transform: rotate(360deg);
 }
@@ -49,40 +49,36 @@ require 'config/config.php';
   transform: translate(-50%, -50%);
   
 }
+h2
+{
+    text-align : center;
+    color: #fff;
+    font-family: 'FredokaOne-Regular';
+    margin-bottom : 1em;
+    font-size : 4em;
+    
+}
+  h3
+{
+    text-align : center;
+    color: #fff;
+    display : block
+    font-family: Quicksand-VariableFont_wght , sans-serif;
+    margin-bottom : 1em;
+    font-size : 3em;
+
+}
 </style>
     </head>
-    <body style="background:#816fca;">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-md navbar-light">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-4 fixed-top leftBar">
-                            <a class="navbar-brand text-white d-block mx-auto text-center py-3 underLine" href="#">Panneau de configuration</a>
-                            <ul class="navbar-nav flex-column">
-                                <li class="nav-item courant mt-3">
-                                    <a class="nav-link text-white p-2" href=""><i class="fas fa-home fa-lg mr-3"></i>Accueil</a>
-                                </li>
-                                <li class="nav-item leftBarItem mt-3">
-                                    <a class="nav-link text-white p-2" href=""><i class="fas fa-clipboard-list fa-lg mr-3"></i>Commandes</a>
-                                </li>
-                                <li class="nav-item leftBarItem mt-3">
-                                    <a class="nav-link text-white p-2" href=""><i class="fas fa-keyboard mr-3"></i>Produits</a>
-                                </li>
-                                <li class="nav-item leftBarItem mt-3">
-                                    <a class="nav-link text-white p-2" href=""><i class="fas fa-user fa-lg mr-3"></i>Clients</a>
-                                </li>
-                            </ul>
-                        </div>
-                        </nav>
-                        <div class="col-lg-9 col-md-8 ml-auto" >
-                             
+    <body style="background:#262A32; margin: 2em 3em;" >
+    <h2>Panel</h2>
+        
+                   <div class="container" style="background:#816fca; padding : 2em 2em; border : 4px solid #fff; border-radius: 4px;  " >
+                   <h3>Gestion de les produits</h3>
                         <div class="card-deck" style="margin: 1em 1em;">
                         
-                            <div class="card container" style="padding:3em 3em; border: 2px solid #000;  ">
+                        
+                            <div class="card" id="container1" style="padding:6em 6em; border: 2px solid #000;  ">
                             <a href="AjouterProduit.php">
                                 <img src="css\images\add.png" class="card-img-top" alt="Ajouter Produit" >
                                 <div class="overlay">
@@ -91,7 +87,7 @@ require 'config/config.php';
                                 </a>
                             </div>
                             
-                            <div class="card container" style="padding:3em 3em; border: 2px solid #000;">
+                            <div class="card" id="container2" style="padding:6em 6em; border: 2px solid #000;">
                             <a href="ChercherProduit.php">
                                 <img src="css\images\edit.png" class="card-img-top" alt="Modifier Produit">
                                 <div class="overlay">
@@ -99,7 +95,7 @@ require 'config/config.php';
                                 </div>
                                 </a>
                             </div>
-                            <div class="card container" style="padding:3em 3em; border: 2px solid #000;">
+                            <div class="card" id="container3" style="padding:6em 6em; border: 2px solid #000;">
                             <a href="RechercheProduit.php">
                                 <img src="css\images\delete.png" class="card-img-top" alt="Supprimer Produit">
                                 <div class="overlay">
@@ -109,16 +105,17 @@ require 'config/config.php';
                             </div>
                         </div>
                         <!-- Statistique -->
-                        <div class="card-deck">
+                        <h3 style="margin-top : 2em;">Statistique de la platforme</h3>
+                        <div class="card-deck" style="margin: 5em 1em;">
                             <div class="card container" style="padding:1em 3em;   ">
-                                <h3 style="margin-bottom:2em"> Nombre de Produit :
+                                <h4 style="margin-bottom:2em"> Nombre de Produit :
                                     <?php $result = mysqli_query($con,"SELECT * FROM `article`");
                                     $increment = 0;
                                     while( $row =  mysqli_fetch_array($result)) 
                                             { $increment++; }
                                              echo $increment;
                                     ?>
-                                </h3>
+                                </h4>
                                 <h5> Smartphone :
                                 <?php $result = mysqli_query($con,"SELECT * FROM `article` WHERE `design` ='Smartphone';");
                                 $increment = 0;
