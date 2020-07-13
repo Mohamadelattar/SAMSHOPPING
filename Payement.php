@@ -96,9 +96,14 @@ input {
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
+     /* width: 100%;
+    max-width: 400px;
+    max-height: 251px;
+    height: 54vw;
+    padding: 20px; */
 }
 
-.container {
+.container1 {
     width: 100%;
     max-width: 400px;
     max-height: 251px;
@@ -315,7 +320,7 @@ input {
 }
 
 /* FLIP ANIMATION */
-.container {
+.container1 {
     perspective: 1000px;
 }
 
@@ -357,7 +362,7 @@ input {
    <div class="payment-title">
         <h1>Payment Information</h1>
     </div>
-    <div class="container preload">
+    <div class="container1 preload">
         <div class="creditcard">
             <div class="front">
                 <div id="ccsingle"></div>

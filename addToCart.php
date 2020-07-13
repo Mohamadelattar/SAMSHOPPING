@@ -13,7 +13,8 @@ if (!mysqli_query($con,$sql)){
 else{
     echo '<script language="javascript">';
     echo 'alert(" item Added Successfully")';
+    echo 'location.reload()';
     echo '</script>';
-    header("Refresh:0");
+
 }
 ?>
