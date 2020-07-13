@@ -3,6 +3,7 @@
 <html>
   <head>
     <title>Chercher Produit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
@@ -11,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
 
     <style type="text/css">
-    
-
+     body{
+       background:#3CC47C;
+     }
       .ui-autocomplete-row
       {
         padding:8px;
@@ -22,7 +24,7 @@
       }
       h3
       {
-        font-family: Sniglet-ExtraBold , sans-serif;
+        font-family: 'Do Hyeon', sans-serif;
         font-size:3em;
       }
       .ui-autocomplete-row:hover
@@ -35,7 +37,7 @@
     <br />
     <br />
     <div class="container">
-      <h3 align="center">Chercher Le Produit</h3>
+      <h3 align="center" style="">Chercher Le Produit</h3>
       <br />
       <br />
       <br />
@@ -48,7 +50,11 @@
           <input type="text" id="search_data" placeholder="Entrer nom du produit..." autocomplete="off" name="titre" class="form-control input-lg" />
           <br>
           <br>
-          <input type="submit" value="chercher" name="enregistrer" class="form-control rounded-pill form-control-lg ">
+          
+          <input type="submit" value="chercher" name="enregistrer" class="  form-control rounded-pill form-control-lg ">
+          <br>
+          <br>
+          <button type="button" class="btn btn-primary btn-lg btn-block " ><a href="Panel.php" style="color : #fff;">Retour</a></button> 
           </form>
         </div>
         <div class="col-md-3">

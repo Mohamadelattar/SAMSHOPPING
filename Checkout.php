@@ -407,7 +407,7 @@ span.price {
 
 
 </style>
-<h2 >Pgae de Paiement</h2>
+<h2 >Page de Paiement</h2>
 <div class="row">
   <div class="col-75">
     <div class="container shadow">

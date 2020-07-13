@@ -100,9 +100,40 @@ if(!isset($_SESSION))
 </form>
     <div class="ml-auto d-flex justify-content-between align-items-center">
        <?php
-        if(isset($_SESSION['nom']) )
+        if(isset($_SESSION['nom'])  )
         {
-           echo "     <div class='profile mr-3 d-flex align-items-center'>
+             if($_SESSION['nom']== "Admin")
+            {
+               echo "     <div class='profile mr-3 d-flex align-items-center'>
+                                         <div id='profileIconWrap' class='icon_wrap'>
+                                                 <img  src='css/images/user.png' alt='photo de profile'>
+                                                 <i  class='fas fa-chevron-down'></i>
+                                         </div>
+                                         <div id='profileDd' class='profile_dd'>
+                                                 <ul class='profile_ul' style='list-style-type: none; padding-left : inherit; min-width:200px;'>
+                                                     <li class='profile_li '>
+                                                             <a href='Panel.php' class='image_name'>
+                                                                     <span class='picon'>
+                                                                            
+                                                                     </span>
+                                                                     <h4 style='font-family:Quicksand-VariableFont_wght,sans-serif; font-size:20px'>Panel</h4>
+                                                             </a>
+                                                     </li>                                                          
+                                                         <li >
+                                                                 <a href='includes/accesses/logout.php' class='logout'>
+                                                                         <span class='picon'>
+                                                                                 <i class='fas fa-sign-out-alt' aria-hidden='true'></i>
+                                                                         </span>
+                                                                         Log out
+                                                                 </a>
+                                                         </li>
+                                                 </ul>
+                                         </div>
+                                 </div>";
+            }
+            else
+            {
+                echo "     <div class='profile mr-3 d-flex align-items-center'>
 									 <div id='profileIconWrap' class='icon_wrap'>
 											 <img  src='css/images/user.png' alt='photo de profile'>
 											 <i  class='fas fa-chevron-down'></i>
@@ -151,14 +182,17 @@ if(!isset($_SESSION))
 													 </li>
 											 </ul>
 									 </div>
-							 </div>";
+                             </div>
+                             ";
+                             echo "<a id='cart-info' class='mr-2' style='cursor: pointer;'><i class='fas fa-shopping-bag'></i></a>";
+             }
         }
         else
         {
             echo "<a  class='mr-2' href='ConnexionClient.php'><i class='far fa-user'></i></a>";
         }
        ?>
-      <a id='cart-info' class='mr-2' style='cursor: pointer;'><i class='fas fa-shopping-bag'></i></a>
+      
 
     </div>
             </div>
