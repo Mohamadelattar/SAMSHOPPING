@@ -39,4 +39,5 @@
 
         </footer>
     <script src="js/cart.js"></script>
+    <script src="Payement.js"></script>
 </html>

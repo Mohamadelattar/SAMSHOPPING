@@ -119,7 +119,7 @@ svg{
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #62DD4C;
 }
 
 a {
@@ -143,6 +143,13 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+.ccicon {
+    height: 38px;
+    position: absolute;
+    right: 6px;
+    top: calc(50% - 17px);
+    width: 60px;
 }
 /* CREDIT CARD IMAGE STYLING */
 .preload * {
@@ -542,7 +549,11 @@ span.price {
             <label for="name"><i class="fab fa-cc-visa"></i>Nom sur La carte</label>
             <input type="text" class="input_info" id="name" name="cardname"  maxlength="20"  placeholder="John More Doe">
             <label for="ccnum"><i class="fab fa-cc-visa"></i>Numero de la carte bancaire</label>
-            <input type="text" class="input_info" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <input type="text" class="input_info" id="cardnumber" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            </svg>
             <div class="row">
               <div class="col-50">
                 <label for="expyear"><i class="fas fa-calendar-alt"></i>Expiration (mm/yy)</label>
@@ -559,7 +570,7 @@ span.price {
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <input type="submit" value="Valider et Payer" class="btn">
       </form>
     </div>
   </div>
@@ -575,7 +586,7 @@ span.price {
     </div>
   </div>
 </div>
-
+<script src="js/Payement.js"></script>
 <?php
  include("includes/footer.php");
 ?>

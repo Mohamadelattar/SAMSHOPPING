@@ -1,12 +1,14 @@
 window.onload = function () {
-
-    const name = document.getElementById('name');
+    alert ("hey!!");
+    const name = document.querySelector('#name');
     const cardnumber = document.getElementById('cardnumber');
     const expirationdate = document.getElementById('expirationdate');
     const securitycode = document.getElementById('securitycode');
     const output = document.getElementById('output');
     const ccicon = document.getElementById('ccicon');
     const ccsingle = document.getElementById('ccsingle');
+    console.log(name);
+    console.log(ccicon);
     
     
     

@@ -21,7 +21,7 @@ if(!isset($_SESSION))
         <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/Payement.js"></script>
+       
         <script src="js/fontawesome.js"></script>
         <script src="js/all.js"></script>
         <script src="js/script.js"></script>
