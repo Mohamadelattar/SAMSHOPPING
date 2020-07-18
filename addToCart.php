@@ -6,14 +6,14 @@ $price = $_POST['hidden_price'];
 $sql="INSERT INTO ligne (id_article,quantite,prix_unit) VALUES('$id' , '1' , '$price')";
 if (!mysqli_query($con,$sql)){
     echo '<script language="javascript">';
-    echo 'alert(" Error : Not Added ")';
+    echo 'alert(" Error : Not Added ");';
+    echo 'window.history.back();';
     echo '</script>';
-    header("Refresh:0");
 }
 else{
     echo '<script language="javascript">';
-    echo 'alert(" item Added Successfully")';
-    echo 'location.reload()';
+    echo 'alert(" item Added Successfully");';
+    echo 'window.history.back();';
     echo '</script>';
 
 }
