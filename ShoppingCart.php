@@ -11,22 +11,24 @@
         while( $row =  mysqli_fetch_array($result))
       {
         $sql = mysqli_query($con,"SELECT * FROM 'article' WHERE id_article=$row[1]");
+        echo "$row";
         while ($col = mysqli_fetch_array($sql) ) {
-        echo "<div class='cart-item'>";
-        echo "<img src='data:image/jpg;base64, base64_encode($col[5]) ' alt='image Produit'>";
-        echo "
-        <div> 
-        <h4> $col[1]</h4>
-        <h5> $col[3]</h5>
-        <span class='remove-item'>Supprimer</span>
-       </div>
-   <div>
-       <i class='fas fa-chevron-up'></i>
-       <p class='item-amount'>1</p>
-       <i class='fas fa-chevron-down'></i>
-   </div>
-    </div>
-        ";
+          echo "$col";
+  //       echo "<div class='cart-item'>";
+  //       echo "<img src='data:image/jpg;base64, base64_encode($col[5]) ' alt='image Produit'>";
+  //       echo "
+  //       <div> 
+  //       <h4> $col[1]</h4>
+  //       <h5> $col[3]</h5>
+  //       <span class='remove-item'>Supprimer</span>
+  //      </div>
+  //  <div>
+  //      <i class='fas fa-chevron-up'></i>
+  //      <p class='item-amount'>1</p>
+  //      <i class='fas fa-chevron-down'></i>
+  //  </div>
+  //   </div>
+  //       ";
 
         }
 
