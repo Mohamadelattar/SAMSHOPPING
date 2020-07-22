@@ -19,7 +19,8 @@
         while ($col = mysqli_fetch_array($sql) ) {
           
         echo "<div class='cart-item'>";
-         echo "<img src='data:image/jpg;base64, base64_encode($col[5]) ' alt='image Produit'>";
+        echo ' <img  src="data:image/jpg;base64,' .  base64_encode($col[5])  . '" />';
+        
          echo "
          <div> 
          <h4> $col[1]</h4>
