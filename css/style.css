@@ -593,7 +593,9 @@ input[type="file"] {
   .item-amount {
       font-family: Sniglet-Regular,sans-serif;
     color: #fff;
-    text-align: center;
+	text-align: center;
+	margin-left: 5px;
+	margin-top: 5px;
   }
   .remove-item {
       font-family: FredokaOne-Regular,sans-serif;
@@ -603,11 +605,12 @@ input[type="file"] {
   .fa-chevron-up,
   .fa-chevron-down {
 
-    color: var(--primaryColor);
+    color: #fff;
     cursor: pointer;
   }
   .fa-chevron-up{
-      margin-bottom:auto;
+	  margin-bottom:auto;
+	  margin-left: 5px;
 
   }
   .fa-chevron-down{

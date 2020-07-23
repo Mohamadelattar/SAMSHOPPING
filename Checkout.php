@@ -576,13 +576,38 @@ span.price {
   </div>
   <div class="col-25">
     <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">IPHONE</a> <span class="price">$1500</span></p>
-      <p><a href="#">SAMSUNG</a> <span class="price">$500</span></p>
-      <p><a href="#">OPPO</a> <span class="price">$400</span></p>
-      <p><a href="#">HUAWEI</a> <span class="price">$200</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>$2600</b></span></p>
+
+        <?php 
+    $total=0;
+    $num=0;
+    $sqql=mysqli_query($con,"SELECT * FROM `ligne`;");
+    while ($cal=mysqli_fetch_array($sqql)) {
+        $num++;
+    }
+    $result = mysqli_query($con,"SELECT * FROM `ligne`;");
+    echo "<h4>Cart <span class='price' style='color:black'><i class='fa fa-shopping-cart'></i> <b>$num</b></span></h4>";
+      while( $row =  mysqli_fetch_array($result))
+    {
+    
+      $sql = mysqli_query($con,"SELECT * FROM article WHERE id_article=$row[1] ");
+      if (!$sql) {
+        printf("Error: %s\n", mysqli_error($con));
+        exit();
+    }
+      while ($col = mysqli_fetch_array($sql) ) {
+        $total+=$col[3];
+      echo " <div class='d-flex justify-content-between'><h6>$col[1]</h6> <span class='price'>$col[3]</span></div>";
+ 
+      }
+
+    }
+    echo "<hr>";
+    echo "<p>Total <span class='price' style='color:black'><b>$total</b></span></p>";
+
+         ?>
+      
+     
+      
     </div>
   </div>
 </div>
