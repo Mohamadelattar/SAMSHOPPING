@@ -3,7 +3,6 @@ if(!isset($_SESSION))
 {
 	session_start();
 }
-
 ?>
 <html>
     <head>
@@ -21,12 +20,9 @@ if(!isset($_SESSION))
         <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap.min.js"></script>
-       
         <script src="js/fontawesome.js"></script>
         <script src="js/all.js"></script>
         <script src="js/script.js"></script>
-
-
         <style media="screen">
         #catalog #catalog_items .img-container {
           position: relative;
@@ -84,16 +80,12 @@ if(!isset($_SESSION))
                 <a class="dropdown-item" href="Accessesoire.php">Accessoires</a>
             </div>
         </li>
-
             <li class="nav-item ">
             <a class ="nav-link" href="catalog.php"><span class="mr-1"><i class="far fa-heart"></i></span>Offres</a>
             </li>
             </ul>
             <form action="recherche.php" method="POST">
             <div class="search-box mr-2 ml-auto ">
-
-
-
             <input class="search-txt" type="text" name="search" value="" placeholder="Chercher sur SAM ...">
                 <a class="search-btn" type="submit" ><i class="fas fa-search"></i></a>
           </div>
@@ -148,31 +140,8 @@ if(!isset($_SESSION))
 																 <h6 style='font-family:Quicksand-VariableFont_wght,sans-serif; font-size:20px'>".$_SESSION['nom']." ".$_SESSION['prenom']."</h6>
 														 </a>
 												 </li>
-													 <li class='profile_li'>
-															 <a href='' class='profile'>
-																	 <span class='picon'>
-																			<i class='fas fa-user' aria-hidden='true'></i>
-																	 </span>
-																	 profile
-															 </a>
-													 </li>
-													 <li >
-															 <a href='' class='Adress'>
-																	 <span class='picon'>
-																			 <i class='fas fa-map-marker' aria-hidden='true'></i>
-																	 </span>
-																	 Adresse
-															 </a>
-													 </li>
-													 <li >
-															 <a href='' class='setting'>
-																	 <span class='picon'>
-																			 <i class='fas fa-cog' aria-hidden='true'></i>
-																	 </span>
-																	 Paramétres
-															 </a>
-													 </li>
-													 <li >
+	 
+ 
 															 <a href='includes/accesses/logout.php' class='logout'>
 																	 <span class='picon'>
 																			 <i class='fas fa-sign-out-alt' aria-hidden='true'></i>
