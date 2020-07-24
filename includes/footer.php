@@ -20,10 +20,7 @@
                     </div>
                     <div class="col-lg-2 col-xs-6 col-md-6">
                         <h6>About</h6>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">About us</a></li>
-                        </ul>
+                  
                     </div>
                     <div class="col-lg-3">
                         <ul class="social_media">

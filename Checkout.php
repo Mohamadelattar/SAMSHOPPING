@@ -1,8 +1,6 @@
 <?php
 require 'config/config.php';
- 
  include("includes/header.php");
-
 ?>
 <style>
 

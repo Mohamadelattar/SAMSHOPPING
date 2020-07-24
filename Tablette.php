@@ -3,18 +3,9 @@ require 'config/config.php';
 include("includes/header.php");
 include("includes/Cart.php");
 ?>
- 
 <section class="container-fluid" id="catalog">
-      
         <h2>Tablette</h2>
         <p><a href="Accessesoire.php">Accessesoire</a>/<a href="Pcportable.php">Pc Portable</a></p>
-        <div class="row">
-            <div class="col-xs-12 col-lg-3" style="text-align:left; font-family: Quicksand-VariableFont_wght , sans-serif;" >
-                <p>931,423 results in all product</p>
-            </div>
-             
-             
-        </div>
         <div  class="   align-content-center flex-wrap" id="catalog_items" style="margin-top:2em;">
         <?php
         
@@ -35,9 +26,7 @@ include("includes/Cart.php");
         $increment++;
       }
       ?>
-        </div>
-        
-         
+        </div>       
 </section>
 <!-- Delivrey Section -->
 <section class="container-fluid" id="delivrey">
@@ -53,8 +42,7 @@ include("includes/Cart.php");
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <h4>Wide choice</h4>
-
+                <h4></h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 

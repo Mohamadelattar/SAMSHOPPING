@@ -1,11 +1,7 @@
- 
-    <?php
+ <?php
     require 'config/config.php';
     require 'includes/form/register_verification.php';
     include ("includes/header.php");
-     
-    
-    
      ?>
   <div class="login-container d-flex align-items-center justify-content-center">
     <form class="login-form mt-3 needs-validation text-center" novalidate method="POST" action="InscriptionClient.php">

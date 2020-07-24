@@ -1,15 +1,13 @@
 window.onload = function () {
-    alert ("hey!!");
-    const name = document.querySelector('#name');
+
+    const name = document.getElementById('name');
     const cardnumber = document.getElementById('cardnumber');
     const expirationdate = document.getElementById('expirationdate');
     const securitycode = document.getElementById('securitycode');
     const output = document.getElementById('output');
     const ccicon = document.getElementById('ccicon');
     const ccsingle = document.getElementById('ccsingle');
-    console.log(name);
-    console.log(ccicon);
-    
+    const generatecard = document.getElementById('generatecard');
     
     
     let cctype = null;
@@ -213,6 +211,9 @@ window.onload = function () {
         let randomNumber = Math.floor(Math.random() * testCards.length);
         cardnumber_mask.unmaskedValue = testCards[randomNumber];
     }
+    generatecard.addEventListener('click', function () {
+        randomCard();
+    });
     
     
     // CREDIT CARD IMAGE JS

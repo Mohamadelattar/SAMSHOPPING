@@ -52,22 +52,22 @@ require 'config/config.php';
     <div class="carousel-item active">
       <img src="css\images\compete-with-amazon.jpg" class="d-block w-100 h-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h5 style="font-size : 2em;">SAM SHOPPING</h5>
+        <p> </p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="css\images\compete-with-amazon.jpg" class="d-block w-100 h-50" alt="...">
+      <img src="css\images\ecommerce-3.jpg" class="d-block w-100 h-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h5 style="font-size : 2em;">SAM SHOPPING</h5>
+        <p> </p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="css\images\compete-with-amazon.jpg" class="d-block w-100 h-50" alt="...">
+      <img src="css\images\ecommerce.jpg" class="d-block w-100 h-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h5 style="font-size : 2em;">SAM SHOPPING</h5>
+        <p> </p>
       </div>
     </div>
   </div>
@@ -175,7 +175,7 @@ require 'config/config.php';
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <h4>Wide choice</h4>
+                <h4></h4>
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
