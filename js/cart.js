@@ -63,6 +63,4 @@
    //    });
       
    //     })();
-$('.close-div').on('click', function(){
-    $(this).closest("#clients-edit-wrapper").remove();
-});
+

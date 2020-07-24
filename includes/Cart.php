@@ -19,14 +19,17 @@
       }
         while ($col = mysqli_fetch_array($sql) ) {
           $total+=$col[3];
-        echo "<div id='clients-edit-wrapper' class='cart-item '>";
+        echo "<div class='cart-item '>";
         echo ' <img  src="data:image/jpg;base64,' .  base64_encode($col[5])  . '" />';
         
          echo "
          <div> 
          <h4> $col[1]</h4>
          <h5> $col[3]</h5>
-         <span class='remove-item'><a style='text-decoration:none;' href='#' class='close-div'>Supprimer</a></span>
+         <form id='the_form' method='POST' action='removeItem.php'>
+         <input type='hidden' value='".$col[0]."' name='hidden_id'>
+         <span class='remove-item'><input type='submit' style=' background: none;border: none;color: #0066ff; text-decoration: none;cursor: pointer;' value='Supprimer'></span>
+         </form>
         </div>
    <div>
         <i class='fas fa-chevron-up'></i>
@@ -45,7 +48,7 @@
     <!-- end of cart-item -->
   <div class="cart-footer">
     <h3>Le Montant Total : $ <span class="cart-total"><?php echo "$total"?></span></h3>
-    <button class="clear-cart banner-btn btn mt-3 btn-custom btn-block text-uppercase rounded-pill btn-lg">Vider Le Panier</button>
+   <form action="removeall.php"><button class="clear-cart banner-btn btn mt-3 btn-custom btn-block text-uppercase rounded-pill btn-lg" type="submit">Vider Le Panier</button></form>
   <button class="clear-cart banner-btn btn mt-3 btn-custom btn-block text-uppercase rounded-pill btn-lg" onclick="window.location.href='checkout.php'">Payer Votre Commande</button>
   </div>
 </div>

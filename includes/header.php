@@ -159,6 +159,7 @@ if(!isset($_SESSION))
         else
         {
             echo "<a  class='mr-2' href='ConnexionClient.php'><i class='far fa-user'></i></a>";
+            echo "<a id='cart-info' class='mr-2' style='cursor: pointer;'><i class='fas fa-shopping-bag'></i></a>";
         }
        ?>
       
