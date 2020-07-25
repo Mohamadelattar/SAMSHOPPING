@@ -36,7 +36,7 @@ if(isset($_POST['login'])) {
 	}
 	}}
 else {
-	array_push($error_login, "Email or password was incorrect<br>");
+	array_push($error_login, "");
 }	
 
 
