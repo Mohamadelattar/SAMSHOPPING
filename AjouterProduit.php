@@ -26,7 +26,7 @@ include("includes/header.php");
         <label for="categorie"   class="col-lg-6">Categorie : </label>
         <select  name="categorie" class="col-lg-6 form-control rounded-pill form-control-lg">
             <option value="smartphone">Smartphone</option>
-            <option value="pc">Pc Portable</option>
+            <option value="pc Portable">Pc Portable</option>
             <option value="tablette">Tablette</option>
             <option value="accessesoire">Accessesoire</option>
         </select>

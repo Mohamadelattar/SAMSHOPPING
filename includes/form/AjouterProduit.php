@@ -17,7 +17,7 @@
 
          // Categorie
          $categorie             =  strip_tags($_POST["categorie"]);          // Remove tags
-         $categorie             =  str_replace(' ','',$categorie);           // remove space
+                    // remove space
          $categorie             =  ucfirst(strtolower($categorie));          // Capitilaze the first letter
 
          // Prix
@@ -25,7 +25,6 @@
 
          // Description
          $description             =  strip_tags($_POST["description"]);         // Remove tags
-         $description             =  str_replace(' ','',$description);          // remove space
          $description             =  ucfirst(strtolower($description));         // Capitilaze the first letter
 
          // Description
@@ -63,6 +62,7 @@
         
          
          $query = mysqli_query($con,"INSERT INTO article VALUES ('','$title','$categorie','$prix','$description','$imageProduit')");
+         header("Location: Panel.php");
     }
        
 
