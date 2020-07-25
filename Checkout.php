@@ -416,30 +416,30 @@ span.price {
 <div class="row">
   <div class="col-75">
     <div class="container shadow">
-      <form action="/action_page.php">
+      <form name="myForm">
       
         <div class="row">
           <div class="col-50">
             <h3>Adresse De Livraison</h3>
             <label for="name"><i class="fa fa-user"></i>Nom</label>
-            <input type="text"class="input_info"  id="fname" name="firstname" placeholder="John">
+            <input type="text"class="input_info"  id="fname" name="11" placeholder="John">
              <label for="prenom"><i class="fa fa-user"></i>Prenom</label>
-            <input type="text"class="input_info"  id="fname" name="firstname" placeholder="M. Doe">
+            <input type="text"class="input_info"  id="fname" name="10" placeholder="M. Doe">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text"class="input_info"  id="email" name="email" placeholder="john@example.com">
+            <input type="text"class="input_info"  id="email" name="9" placeholder="john@example.com">
             <label for="adr"><i class="fas fa-address-card"></i> Addresse</label>
-            <input type="text"class="input_info"  id="adr" name="address" placeholder="542 W. 15th Street">
+            <input type="text"class="input_info"  id="adr" name="8" placeholder="542 W. 15th Street">
             <label for="city"><i class="fas fa-map-marker-alt"></i> Ville</label>
-            <input type="text" class="input_info" id="city" name="city" placeholder="New York">
+            <input type="text" class="input_info" id="city" name="7" placeholder="New York">
 
             <div class="row">
               <div class="col-50">
                 <label for="state"><i class="fas fa-building"></i>Province</label>
-                <input type="text" class="input_info"  id="state" name="state" placeholder="New York">
+                <input type="text" class="input_info"  id="state" name="6" placeholder="New York">
               </div>
               <div class="col-50">
                 <label for="zip"><i class="fas fa-home"></i>Code Postale</label>
-                <input type="text" class="input_info" id="zip" name="zip" placeholder="10001">
+                <input type="text" class="input_info" id="zip" name="5" placeholder="10001">
               </div>
             </div>
           </div>
@@ -447,7 +447,7 @@ span.price {
           <div class="col-50">
             <h3>Paiement</h3>
             <div class="container1 preload">
-        <div class="creditcard">
+        <div class="creditcard ">
             <div class="front">
                 <div id="ccsingle"></div>
                 <svg version="1.1" id="cardfront" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -545,9 +545,9 @@ span.price {
         </div>
     </div>
             <label for="name"><i class="fab fa-cc-visa"></i>Nom sur La carte</label>
-            <input type="text" class="input_info" id="name" name="cardname"  maxlength="20"  placeholder="John More Doe">
+            <input type="text" class="input_info" id="name" name="4"  maxlength="20"  placeholder="John More Doe" oninput="nameInput();">
             <label for="ccnum"><i class="fab fa-cc-visa"></i>Numero de la carte bancaire</label>
-            <input type="text" class="input_info" id="cardnumber" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <input type="text" class="input_info" name="3" id="cardnumber" placeholder="1111-2222-3333-4444" pattern="[0-9]*" inputmode="numeric" oninput="cardnumberInput();" >
             <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -555,11 +555,11 @@ span.price {
             <div class="row">
               <div class="col-50">
                 <label for="expyear"><i class="fas fa-calendar-alt"></i>Expiration (mm/yy)</label>
-                <input type="text" class="input_info" id="expyear" name="expyear" placeholder="2018">
+                <input id="expirationdate" type="text" name="2" class="input_info"  pattern="[0-9]*" inputmode="numeric" oninput="experationInput();">
               </div>
               <div class="col-50">
                 <label for="cvv"><i class="fas fa-lock"></i>CVV</label>
-                <input type="text" class="input_info" id="cvv" name="cvv" placeholder="352">
+                <input id="securitycode" type="text"  pattern="[0-9]*" inputmode="numeric" name="1" class="input_info" placeholder="352" oninput="cvvInput();">
               </div>
             </div>
           </div>
@@ -568,7 +568,8 @@ span.price {
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Valider et Payer" class="btn">
+        <input type="button" value="Valider et Payer" class="btn" onclick="validationForm()">
+
       </form>
     </div>
   </div>

@@ -1,5 +1,5 @@
 window.onload = function () {
-
+    //   window.alert("this shit is working");
     const name = document.getElementById('name');
     const cardnumber = document.getElementById('cardnumber');
     const expirationdate = document.getElementById('expirationdate');
@@ -8,7 +8,9 @@ window.onload = function () {
     const ccicon = document.getElementById('ccicon');
     const ccsingle = document.getElementById('ccsingle');
     const generatecard = document.getElementById('generatecard');
-    
+    const svgname= document.getElementById('svgname');
+    const error = document.getElementById("error");
+    console.log(svgname);
     
     let cctype = null;
     
@@ -197,28 +199,28 @@ window.onload = function () {
     
     
     //Generate random card number from list of known test numbers
-    const randomCard = function () {
-        let testCards = [
-            '4000056655665556',
-            '5200828282828210',
-            '371449635398431',
-            '6011000990139424',
-            '30569309025904',
-            '3566002020360505',
-            '6200000000000005',
-            '6759649826438453',
-        ];
-        let randomNumber = Math.floor(Math.random() * testCards.length);
-        cardnumber_mask.unmaskedValue = testCards[randomNumber];
-    }
-    generatecard.addEventListener('click', function () {
-        randomCard();
-    });
+    // const randomCard = function () {
+    //     let testCards = [
+    //         '4000056655665556',
+    //         '5200828282828210',
+    //         '371449635398431',
+    //         '6011000990139424',
+    //         '30569309025904',
+    //         '3566002020360505',
+    //         '6200000000000005',
+    //         '6759649826438453',
+    //     ];
+    //     let randomNumber = Math.floor(Math.random() * testCards.length);
+    //     cardnumber_mask.unmaskedValue = testCards[randomNumber];
+    // }
+    // generatecard.addEventListener('click', function () {
+    //     randomCard();
+    // });
     
     
     // CREDIT CARD IMAGE JS
-     document.querySelector('.preload').classList.remove('preload');
-    document.querySelector('.creditcard').addEventListener('click', function () {
+     document.getElementsByClassName('preload').classList.remove('preload');
+    document.getElementsByClassName('creditcard').addEventListener('click', function () {
         if (this.classList.contains('flipped')) {
             this.classList.remove('flipped');
         } else {
@@ -227,19 +229,10 @@ window.onload = function () {
     })
     
     //On Input Change Events
-    name.addEventListener('input', function () {
-        if (name.value.length == 0) {
-            document.getElementById('svgname').innerHTML = 'John Doe';
-            document.getElementById('svgnameback').innerHTML = 'John Doe';
-        } else {
-            document.getElementById('svgname').innerHTML = this.value;
-            document.getElementById('svgnameback').innerHTML = this.value;
-        }
-    });
     
     cardnumber_mask.on('accept', function () {
         if (cardnumber_mask.value.length == 0) {
-            document.getElementById('svgnumber').innerHTML = '0123 4567 8910 1112';
+            document.getElementById('svgnumber').innerHTML = '0123 0000 8910 1112';
         } else {
             document.getElementById('svgnumber').innerHTML = cardnumber_mask.value;
         }
