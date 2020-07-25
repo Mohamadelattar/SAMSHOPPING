@@ -416,7 +416,7 @@ span.price {
 <div class="row">
   <div class="col-75">
     <div class="container shadow">
-      <form name="myForm">
+      <form id="myForm" name="myForm" method="POST" action="checkoutSubmit.php">
       
         <div class="row">
           <div class="col-50">
@@ -583,7 +583,7 @@ span.price {
     while ($cal=mysqli_fetch_array($sqql)) {
         $num++;
     }
-    $result = mysqli_query($con,"SELECT * FROM `ligne`;");
+    $result = mysqli_query($con,"SELECT * FROM `ligne` WHERE paid=0;");
     echo "<h4>Cart <span class='price' style='color:black'><i class='fa fa-shopping-cart'></i> <b>$num</b></span></h4>";
       while( $row =  mysqli_fetch_array($result))
     {

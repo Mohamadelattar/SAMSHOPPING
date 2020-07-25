@@ -184,13 +184,21 @@ if(!isset($_SESSION))
             text: "Votre commande est Payé Avec Succés!",
             icon: "success"
         }).then( function() {
-            window.location = "home.php";
+           document.getElementById("myForm").submit();
         });
                     }
    
     }
    
-               
+         function addtoCart(){
+            swal({
+            title: "Félicitation!",
+            text: "Votre commande est Ajouté au Panier!",
+            icon: "success"
+        }).then( function() {
+           document.getElementById("myForm").submit();
+        });
+         }      
         </script>
         <style media="screen">
         #catalog #catalog_items .img-container {

@@ -23,7 +23,7 @@ include("includes/Cart.php");
         echo "<input type='hidden' name='hidden_id' value='".$row[0]."'>";
         echo "<input type='hidden' name='hidden_price' value='".$row[3]."'>";
         echo ' <img  height="auto" width="100%" src="data:image/jpg;base64,' .  base64_encode($row[5])  . '" />';
-        echo "<button type='submit' class='bag-btn' data-id='1' > <i class='fas fa-shopping-cart'></i> Ajouter au Panier </button> </div>";
+        echo "<button  class='bag-btn' data-id='1' onclick='addtoCart()' > <i class='fas fa-shopping-cart'></i> Ajouter au Panier </button> </div>";
         echo '<br>';
         echo "<div class='titre_item'><p> ".$row[1]."</p>";
         echo "<span>".$row[3]."DH"."</span></div>";

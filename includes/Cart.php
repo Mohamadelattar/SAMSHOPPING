@@ -8,7 +8,7 @@
     <!-- cart-item -->
      <?php 
      $total=0;
-      $result = mysqli_query($con,"SELECT * FROM `ligne`;");
+      $result = mysqli_query($con,"SELECT * FROM `ligne`WHERE paid=0;");
         while( $row =  mysqli_fetch_array($result))
       {
         //echo $row;
