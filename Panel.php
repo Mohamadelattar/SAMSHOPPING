@@ -155,35 +155,7 @@ h2
                         </div>
                         </div>
 
-                        <h3 style="margin-top : 1em;">Statistique de les ventes</h3>
-                        <div class="card-deck" style="margin: 3em 1em;">
-                        <div class="card container" style="padding:1em 3em;   ">
-                        <table class="table">
-                        <thead>
-                        <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Produit Vendus</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php  $result = mysqli_query($con,"SELECT * FROM `ligne` WHERE `paid` = 1;");
-                        while( $row =  mysqli_fetch_array($result)) 
-                        { 
-                          $article = mysqli_query($con,"SELECT * FROM `article` WHERE `id_article` = $row[1];");
-                          $result = mysqli_fetch_array($article);
-                            echo"<tr>
-                            <th scope='row'></th>
-                            <td>".$result[1] ."</td>
-                            <td>
-                           
-                            </td>
-                        </tr>
-                        <tr>";}
-                        ?>
-                        </tbody>
-                        </table>
-                        </div>
-                        </div>
+                       
                         <button type="button" class="btn btn-primary btn-lg btn-block" ><a href="home.php" style="color : #fff;">Visiter le site</a></button>                                
     </body>
 </html>
