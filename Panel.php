@@ -166,11 +166,11 @@ h2
                         </tr>
                         </thead>
                         <tbody>
-                        <?php  $result = mysqli_query($con,"SELECT * FROM `ligne` WHERE `paid` = 1;");
+                        <?php  $result = mysqli_query($con,"SELECT * FROM `ligne` WHERE paid = 1;");
                         while( $row =  mysqli_fetch_array($result)) 
                         { 
                           $article = mysqli_query($con,"SELECT * FROM `article` WHERE `id_article` = $row[1];");
-                          $result = mysqli_fetch_array($article);
+                         while($result = mysqli_fetch_array($article)) {
                             echo"<tr>
                             <th scope='row'></th>
                             <td>".$result[1] ."</td>
@@ -178,7 +178,7 @@ h2
                            
                             </td>
                         </tr>
-                        <tr>";}
+                        <tr>";}}
                         ?>
                         </tbody>
                         </table>
