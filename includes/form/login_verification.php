@@ -6,7 +6,7 @@ if(!isset($_SESSION))
  $error_login = array();
 
 if(isset($_POST['login'])) {
-	if($_POST['log_email'] == 'Admin@admin.com')
+	if($_POST['log_email'] == 'Admin@admin.com' || $_POST['log_email'] == 'admin@admin.com')
 	{
 		$admin_email = 'Admin@admin.com';
 		$_SESSION['nom'] = $admin_email;

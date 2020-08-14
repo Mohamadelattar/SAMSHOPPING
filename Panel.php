@@ -155,6 +155,7 @@ h2
                         </div>
                         </div>
 
+<<<<<<< HEAD
                         <h3 style="margin-top : 1em;">Statistique de les ventes</h3>
                         <div class="card-deck" style="margin: 3em 1em;">
                         <div class="card container" style="padding:1em 3em;   ">
@@ -184,6 +185,9 @@ h2
                         </table>
                         </div>
                         </div>
+=======
+                       
+>>>>>>> fda8726815a10403ea0cc0632b81c5c89f5430a1
                         <button type="button" class="btn btn-primary btn-lg btn-block" ><a href="home.php" style="color : #fff;">Visiter le site</a></button>                                
     </body>
 </html>
