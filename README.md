@@ -1,9 +1,7 @@
 # SAMSHOPPING : Application web E-commerce
 
-Cette application contenant :
+Réalisation d’une application web e-commerce pour une entreprise de vente des produits informatiques , en utilisant HTML, CSS, Javascript, PHP, et MySQL.
 
-1 Dashboard pour la gestion de l'application : 
-* Ajouter des produits
-* Supprimer/Modifier 
+  
 
 
